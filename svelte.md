@@ -41,7 +41,7 @@ In that example we are using a Cat entity [created previously](entities.md). Rep
 // src/routes/+page.svelte
 
 <script lang="ts">
-  import Manifest from "manifest/sdk"
+  import Manifest from "@mnfst/sdk";
   import { onMount } from "svelte";
 
   interface Cat {
@@ -55,8 +55,8 @@ In that example we are using a Cat entity [created previously](entities.md). Rep
 
   onMount(async () => {
     const manifest = new Manifest();
-    const result = await cs.from("cats").find<Cat>();
-    const cats = result.data;
+    const result = await manifest.from("cats").find<Cat>();
+    cats = result.data;
   });
 </script>
 
@@ -67,7 +67,6 @@ In that example we are using a Cat entity [created previously](entities.md). Rep
     {/each}
   </ul>
 </div>
-
 ```
 
 Checkout the [SDK doc](javascript-sdk.md) to see more usages of the SDK: CRUD operations, file upload, authentication,
