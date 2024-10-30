@@ -6,16 +6,16 @@ id: deploy
 
 Manifest is made to be self-hosted: backends can be deployed with ease wherever you want using different methods.
 
-Unless you have motives to do otherwise, **we recommend using app platforms services** as deploying your backend can be done **in few clicks without hassle**. Checkout the guides for the following services:
+Unless you have motives to do otherwise, **we recommend using app platform services** as deploying your backend can be done **in a few clicks without hassle**. Check the guides for the following services:
 
-- [Deploy Manifest on Digital Ocean App Platform](./deploy-digital-ocean.md)
+- [Deploy Manifest on DigitalOcean App Platform](./deploy-digital-ocean.md)
 - [Deploy Manifest on Fly.io](./deploy-fly-io.md)
 - [Deploy Manifest on Render.com](./deploy-render-com.md)
 - [Deploy Manifest on Heroku](./deploy-heroku.md)
 
 ## System requirements
 
-The minimum system requirements to run a Manifest backend are **1vCPU** and **512 Mb RAM**. It usually corresponds to one of the cheapest option on cloud providers.
+The minimum system requirements to run a Manifest backend are **1vCPU** and **512 MB RAM**. It usually corresponds to one of the cheapest option on cloud providers.
 
 The server needs at least [Node.js v18 or more](https://nodejs.org/fr) and a process manager like [pm2](https://github.com/Unitech/pm2/).
 
@@ -84,14 +84,14 @@ And we need also to use [Docker Compose](https://docs.docker.com/compose/) file 
 version: '3.8'
 
 services:
-app:
-image: manifest
-build:
-context: .
-dockerfile: Dockerfile
-ports:
-  - '1111:1111'
-volumes:
-  - ./manifest/backend.db:/app/manifest/backend.db
-  - ./public:/app/public
+  app:
+    image: manifest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '1111:1111'
+    volumes:
+      - ./manifest/backend.db:/app/manifest/backend.db
+      - ./public:/app/public
 ```
