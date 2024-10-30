@@ -7,7 +7,6 @@ id: install
 ## Prerequisites
 
 - [NodeJS](https://nodejs.org/en/) (**18.x**).
-- ⚠ A computer that runs Linux or macOS (Windows compatibility on the way !)
 
 ## Install Manifest
 

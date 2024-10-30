@@ -55,8 +55,7 @@ In other words:
 All relationships are **bi-directional**, which means that you just have to specify them **in one side only** to work with them in both directions.
 
 When you define a **belongsTo** relationship, it implicitly set the opposite _hasMany_ relationship and allow [querying relations](#querying-relations) in both directions.
-
-### Relation params
+:::
 
 ## Relation params
 
