@@ -27,7 +27,7 @@ The following screen will display a form with some fields that you have to confi
 - **Region (optional):** Choose the closest region to your users
 - **Build command**: Enter `echo "No build step required"` as that field is mandatory, but no build command is needed
 - **Start command**: The value should be `node node_modules/manifest/dist/manifest/src/main.js`
-- **Environment variables**: Add the 2 environment variables: `TOKEN_SECRET_KEY` (you can generate with https://jwtsecret.com/generate) and `NODE_ENV=production`.
+- **Environment variables**: Add the 2 environment variables: `TOKEN_SECRET_KEY` (which you can generate at https://jwtsecret.com/generate) and `NODE_ENV=production`.
 
 Click on "Deploy web service" to launch the deployment.
 

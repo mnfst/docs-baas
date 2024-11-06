@@ -6,15 +6,15 @@ id: deploy-heroku
 
 ![Heroku homepage](./assets/images/deploy/herokuhome.png)
 
-[Heroku](https://heroku.com/) is a popular app platform cloud provider that supports many languages and provides a nice interface to deploy apps.
+[Heroku](https://heroku.com/) is a popular cloud app platform provider that supports many languages and provides a nice interface to deploy apps.
 
 Sign in to your Heroku account or create a new one.
 
-You can click on the "New" button and then "Create a new app" to get started. Choose the app name and the region that is closest to your users and click on "create app".
+You can click on the "New" button and then "Create a new app" to get started. Choose the app name and the region that is closest to your users and click on "Create app".
 
 ## Link the source provider
 
-In our example we are deploying a Manifest backend hosted in [GitHub](https://github.com) but you can get it from other sources too like the Heroku Git or Container Registry.
+In our example we are deploying a Manifest backend hosted in [GitHub](https://github.com) but you can get it from other sources too like Heroku Git or Container Registry.
 
 Select "GitHub" and then connect the repository of your manifest backend. Click on "Automatic deploys" if you want to enable push-to-deploy on the main branch. Make sure that you are on the correct branch that corresponds to your production version (usually `main` or `master`).
 
@@ -30,7 +30,7 @@ A message will indicate that your app is ready, and a link to view it will appea
 
 ## Add environment variables
 
-Go to the "Settings" tab and click on "Reveal Config Vars" in the "Config Vars" section. Then add the 2 environment variables: `TOKEN_SECRET_KEY` (you can generate with https://jwtsecret.com/generate) and `NODE_ENV=production`.
+Go to the "Settings" tab and click on "Reveal Config Vars" in the "Config Vars" section. Then add the 2 environment variables: `TOKEN_SECRET_KEY` (which you can generate at https://jwtsecret.com/generate) and `NODE_ENV=production`.
 
 ## Create a start script for your Dyno
 

@@ -22,7 +22,7 @@ The next screen will allow you to configure the app to make it work as you want.
 - **Region (optional):** Choose the region closest to where your audience is
 - **Network**: Set the internal port to `1111` to match the default Manifest port.
 - **CPU & Memory (optional)**: Manifest can run on the **1 CPU** and **512 MB** VM Memory on small/medium projects. The default size is a bit bigger, you can replace it by a smaller one if you want.
-- **Secrets**: Add the 2 secrets: `TOKEN_SECRET_KEY` (you can generate with [JWTSecret.com](https://jwtsecret.com/generate)) and `NODE_ENV=production`.
+- **Secrets**: Add the 2 secrets: `TOKEN_SECRET_KEY` (which you can generate at [JWTSecret.com](https://jwtsecret.com/generate)) and `NODE_ENV=production`.
 
 Validate the config and Fly.io will build the image and deploy.
 
