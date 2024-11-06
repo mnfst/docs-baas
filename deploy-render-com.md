@@ -8,7 +8,9 @@ id: deploy-render-com
 
 [Render](https://render.com) is a popular cloud provider that enables developers to ship apps without hassle.
 
-Create an account on render.com or sign in to your existing one. From the dashboard, click on "Create a new web service" to get started.
+Create an account on render.com or sign in to your existing one.
+
+From the dashboard, click on "Create a new web service" to get started.
 
 ## Link the source provider
 

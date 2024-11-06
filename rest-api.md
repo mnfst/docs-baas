@@ -12,7 +12,7 @@ All entities start with the `api/dynamic` prefix. Ex: `http://localhost:1111/api
 
 :::tip
 
-An **OpenAPI** documentation for the REST API is automatically generated on http://localhost:1111/api. Have a look !
+An **OpenAPI** documentation for the REST API is automatically generated on http://localhost:1111/api. Have a look!
 
 :::
 
