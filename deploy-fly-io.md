@@ -26,4 +26,4 @@ The next screen will allow you to configure the app to make it work as you want.
 
 Validate the config and Fly.io will build the image and deploy.
 
-🎉 That's it ! Click on "View app" to see it.
+🎉 That's it! Click on "View app" to see it.

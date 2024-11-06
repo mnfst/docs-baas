@@ -179,6 +179,6 @@ Logout removes the token from future request headers.
 
   </TabItem>
   <TabItem value="rest" label="REST API" default>
-    Reset the `Authorization` header as you usually do, and you are good to go !
+    Reset the `Authorization` header as you usually do, and you are good to go!
   </TabItem>
 </Tabs>

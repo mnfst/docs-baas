@@ -50,4 +50,4 @@ To make this script launch our Manifest backend, go back to your codebase and op
 
 Commit, push, and deploy on Heroku if you haven"t enabled the automatic deploys. In your Heroku panel, go to the "Resources" tab and activate the Dynos to start the script.
 
-🎉 That's it ! Now you can click on "Open app" to see it !
+🎉 That's it! Now you can click on "Open app" to see it!

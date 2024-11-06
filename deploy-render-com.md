@@ -29,7 +29,7 @@ The following screen will display a form with some fields that you have to confi
 
 Click on "Deploy web service" to launch the deployment.
 
-🎉 That's it ! Your app should be available in a few minutes at the domain ending in onrender.com.
+🎉 That's it! Your app should be available in a few minutes at the domain ending in onrender.com.
 
 :::tip
 

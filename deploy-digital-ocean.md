@@ -42,4 +42,4 @@ Click on your app name's "Edit" button and add the 2 environment variables: `TOK
 
 The last step let's you choose your app name and region where you should select the location that is closest to your users. After the recap you are good to go. Click on "Create resources" to launch the build.
 
-🎉 That's it ! You can click on the "Live App" button to see it live. To set up your own domain name, add it to the "Domains" setting.
+🎉 That's it! You can click on the "Live App" button to see it live. To set up your own domain name, add it to the "Domains" setting.
