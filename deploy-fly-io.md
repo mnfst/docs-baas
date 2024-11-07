@@ -6,13 +6,28 @@ id: deploy-fly-io
 
 [Fly.io](https://fly.io) is a cloud provider that focuses on user experience and zero-config deployments.
 
+### Create a "start" script for production
+
+The `npm run manifest` script should only be used for **development** as it watches file changes.
+
+Go back to your codebase and open the `package.json` file and add a new **start** script on the scripts list with the value `node node_modules/manifest/dist/manifest/src/main.js` as following:
+
+```json title="package.json"
+"scripts": {
+    "start": "node node_modules/manifest/dist/manifest/src/main.js"
+    [...]
+}
+```
+
+# Create a new app
+
 First create a Fly.io account or sign in to access your dashboard. Click on "Launch an app" to start the process.
 
 In our example we are deploying a Manifest backend hosted in [GitHub](https://github.com/). You can also connect to your codebase using the [Fly.io CLI](https://fly.io/docs/flyctl/install/).After configuring your GitHub integration with Fly.io, select the repository and click on "Deploy repository" to launch the deployment.
 
 ![Fly.io new app](./assets/images/deploy/fly1.png)
 
-## Configuring your app
+## Configure your app
 
 The next screen will allow you to configure the app to make it work as you want. Here are the settings that you can or must update (in UI order):
 

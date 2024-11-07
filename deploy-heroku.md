@@ -49,16 +49,6 @@ Go to the "Settings" tab and click on "Reveal Config Vars" in the "Config Vars" 
 
 Heroku's task runners are called Dynos and the default one will run on `npm run start`.
 
-To make this script launch our Manifest backend, go back to your codebase and open the `package.json` file and add a new "start" script on the scripts list with the value `node node_modules/manifest/dist/manifest/src/main.js`:
-
-```json title="package.json"
-"scripts": {
-	"start": "node node_modules/manifest/dist/manifest/src/main.js",
-	"manifest": "node node_modules/manifest/scripts/watch/watch.js",
-	"manifest:seed": "node node_modules/manifest/dist/manifest/src/seed/scripts/seed.js"
-},
-```
-
 Commit, push, and deploy on Heroku if you haven't enabled the automatic deploys. In your Heroku panel, go to the "Resources" tab and activate Dynos to start the script.
 
 🎉 That's it! Now you can click on "Open app" to see it!
