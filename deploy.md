@@ -2,16 +2,30 @@
 id: deploy
 ---
 
+import Card from '@theme/Card';
+import CardContainer from '@theme/CardContainer';
+
 # Deploy Manifest
 
 Manifest is made to be self-hosted: backends can be deployed with ease wherever you want using different methods.
 
 Unless you have motives to do otherwise, **we recommend using app platform services** as deploying your backend can be done **in a few clicks without hassle**. Check the guides for the following services:
 
-- [Deploy Manifest on DigitalOcean App Platform](./deploy-digital-ocean.md)
-- [Deploy Manifest on Fly.io](./deploy-fly-io.md)
-- [Deploy Manifest on Render.com](./deploy-render-com.md)
-- [Deploy Manifest on Heroku](./deploy-heroku.md)
+  <CardContainer>
+    <Card href="./deploy-digital-ocean.md" title="Deploy Manifest on DigitalOcean App Platform">
+      Deploy Manifest on DigitalOcean App Platform
+    </Card>
+    <Card href="./deploy-fly-io.md" title="Deploy Manifest on Fly.io">
+      Deploy Manifest on Fly.io
+    </Card>
+    <Card href="./deploy-render-com.md" title="Deploy Manifest on Render.com">
+      Deploy Manifest on Render.com
+    </Card>
+    <Card href="./deploy-heroku.md" title="Deploy Manifest on Heroku">
+      Deploy Manifest on Heroku
+    </Card>
+
+  </CardContainer>
 
 ## System requirements
 
