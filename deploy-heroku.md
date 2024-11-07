@@ -6,11 +6,24 @@ id: deploy-heroku
 
 [Heroku](https://heroku.com/) is a popular cloud app platform provider that supports many languages and provides a nice interface to deploy apps.
 
-Sign in to your Heroku account or create a new one.
+### Create a "start" script for production
 
-You can click on the "New" button and then "Create a new app" to get started. Choose the app name and the region that is closest to your users and click on "Create app".
+The `npm run manifest` script should only be used for **development** as it watches file changes.
+
+Go back to your codebase and open the `package.json` file and add a new **start** script on the scripts list with the value `node node_modules/manifest/dist/manifest/src/main.js` as following:
+
+```json title="package.json"
+"scripts": {
+    "start": "node node_modules/manifest/dist/manifest/src/main.js"
+    [...]
+}
+```
 
 ## Link the source provider
+
+Sign in to your [Heroku](https://heroku.com/) account or create a new one.
+
+You can click on the "New" button and then "Create a new app" to get started. Choose the app name and the region that is closest to your users and click on "Create app".
 
 In our example we are deploying a Manifest backend hosted in [GitHub](https://github.com) but you can get it from other sources too like Heroku Git or Container Registry.
 

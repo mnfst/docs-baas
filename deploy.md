@@ -6,7 +6,11 @@ id: deploy
 
 Manifest is made to be self-hosted: backends can be deployed with ease wherever you want using different methods.
 
-Unless you have motives to do otherwise, **we recommend using app platform services** as deploying your backend can be done **in a few clicks without hassle**. Check the guides for the following services:
+## Guides for popular cloud services
+
+Unless you have motives to do otherwise, **we recommend using app platform services** as deploying your backend can be done **in a few clicks without hassle**.
+
+Here are some quick guides to launch your app in a few minutes:
 
 <div class="card-container">
   <a href="./deploy-digital-ocean" class="card">
@@ -30,28 +34,34 @@ Unless you have motives to do otherwise, **we recommend using app platform servi
   </a>
 </div>
 
-## System requirements
+## General guidelines
+
+The following guidelines concern every deployment of Manifest. Unlike the previous section, which is provider-specific, it applies to all Manifest deployments.
+
+### System requirements
 
 The minimum system requirements to run a Manifest backend are **1vCPU** and **512 MB RAM**. It usually corresponds to one of the cheapest option on cloud providers.
 
 The server needs at least [Node.js v18 or more](https://nodejs.org/fr) and a process manager like [pm2](https://github.com/Unitech/pm2/).
 
-## Environment variables
+### Environment variables
 
-You need to create a `.env` file at app root level with the following variables:
+You need to create a `.env` file at app root level with at least the 2 following variables:
 
 ```env title=".env"
 TOKEN_SECRET_KEY=%ReplaceByYourKey%
 NODE_ENV=production
 ```
 
-You can also choose your port (default is 1111):
+#### Available variables
 
-```
-PORT=3000
-```
+| Variable         | Default       | Description                                                                                                                                  |
+| ---------------- | ------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| TOKEN_SECRET_KEY | -             | The [JSON Web Token](https://jwt.io/) secret key to encode your authentication tokens. [Generate one here](https://jwtsecret.com/generate)   |
+| NODE_ENV         | `development` | The environment of the app. For Production/Staging deployements, it should be set to `production`                                            |
+| PORT             | `1111`        | The port of your app. You can either adapt your server settings to listen to `1111` or change here to your server's default (usually `3000`) |
 
-## Start script for production
+### Start script for production
 
 The `npm run manifest` script should only be used for **development** as it watches file changes.
 
@@ -66,7 +76,7 @@ Go back to your codebase and open the `package.json` file and add a new **start*
 
 After that you will be able to run Manifest for production with `npm run start`.
 
-## Docker
+### Docker
 
 [Docker](https://www.docker.com/) is a popular choice among developers. It uses containerization to ensure that the app will work well whatever the environment.
 

@@ -6,11 +6,24 @@ id: deploy-render-com
 
 [Render](https://render.com) is a popular cloud provider that enables developers to ship apps without hassle.
 
-Create an account on render.com or sign in to your existing one.
+### Create a "start" script for production
 
-From the dashboard, click on "Create a new web service" to get started.
+The `npm run manifest` script should only be used for **development** as it watches file changes.
+
+Go back to your codebase and open the `package.json` file and add a new **start** script on the scripts list with the value `node node_modules/manifest/dist/manifest/src/main.js` as following:
+
+```json title="package.json"
+"scripts": {
+    "start": "node node_modules/manifest/dist/manifest/src/main.js"
+    [...]
+}
+```
 
 ## Link the source provider
+
+Create an account on [render.com](https://render.com) or sign in to your existing one.
+
+From the dashboard, click on "Create a new web service" to get started.
 
 In our example, we are deploying a backend on a GitHub repository, but you can also deploy from GitLab or BitBucket.
 
