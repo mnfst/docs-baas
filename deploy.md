@@ -9,26 +9,25 @@ Manifest is made to be self-hosted: backends can be deployed with ease wherever 
 Unless you have motives to do otherwise, **we recommend using app platform services** as deploying your backend can be done **in a few clicks without hassle**. Check the guides for the following services:
 
 <div class="card-container">
-  <div class="card">
-    <a href="./deploy-digital-ocean.md" target="_blank" title="Deploy Manifest on DigitalOcean App Platform">
-      <p>Deploy Manifest on DigitalOcean App Platform</p>
-    </a>
-  </div>
-  <div class="card">
-    <a href="./deploy-fly-io.md" target="_blank" title="Deploy Manifest on Fly.io">
-      <p>Deploy Manifest on Fly.io</p>
-    </a>
-  </div>
-  <div class="card">
-    <a href="./deploy-render-com.md" target="_blank" title="Deploy Manifest on Render.com">
-      <p>Deploy Manifest on Render.com</p>
-    </a>
-  </div>
-  <div class="card">
-    <a href="./deploy-heroku.md" target="_blank" title="Deploy Manifest on Heroku">
-      <p>Deploy Manifest on Heroku</p>
-    </a>
-  </div>
+  <a href="./deploy-digital-ocean.md" class="card" target="_blank">
+    <img src="./assets/images/deploy/digitalocean-icon.svg" alt="DigitalOcean Icon">
+    <p>Deploy Manifest on DigitalOcean App Platform</p>
+  </a>
+  
+  <a href="./deploy-fly-io.md" class="card" target="_blank">
+    <img src="./assets/images/deploy/fly-icon.svg" alt="Fly.io Icon">
+    <p>Deploy Manifest on Fly.io</p>
+  </a>
+  
+  <a href="./deploy-render-com.md" class="card" target="_blank">
+    <img src="./assets/images/deploy/render-icon.svg" alt="Render.com Icon">
+    <p>Deploy Manifest on Render.com</p>
+  </a>
+  
+  <a href="./deploy-heroku.md" class="card" target="_blank">
+    <img src="./assets/images/deploy/heroku-icon.svg" alt="Heroku Icon">
+    <p>Deploy Manifest on Heroku</p>
+  </a>
 </div>
 
 ## System requirements
