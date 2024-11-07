@@ -12,8 +12,7 @@ It provides a complete backend to your client app without the hassle that comes 
 
 Here is an example of a complete Manifest app:
 
-```yaml
-# manifest/backend.yml
+```yaml title="manifest/backend.yml"
 name: Healthcare application
 
 entities:

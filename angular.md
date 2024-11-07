@@ -36,9 +36,7 @@ npm i @mnfst/sdk
 
 In that example we are using a Cat entity [created previously](entities.md). Replace it by your own entity.
 
-```js
-// app.component.ts
-
+```js title="app.component.ts"
 import { Component } from '@angular/core'
 import Manifest from '@mnfst/sdk'
 

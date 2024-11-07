@@ -11,6 +11,12 @@ Authentication is the process of proving that people are who they say they are.
 
 Manifest uses **JSON Web Tokens (JWT)** to do that. When you log in, you basically create a new **token** that you use in your next requests to prove your identity. This allows us to use [Policies](./policies.md) to grant or deny the access to some resources based on the user characteristics.
 
+:::info
+
+Notice the `TOKEN_SECRET_KEY` variable in your `.env` file ? This is the key that will encrypt your tokens, you can [generate one here](https://jwtsecret.com/generate).
+
+:::
+
 ## Admins
 
 Admins are a built-in entity that are **the only ones with access to the admin panel** (located at http://localhost:1111 by default). The admins are usually the people who manage the application on a day-to-day basis. Only admins can see and manage other admins.
@@ -32,7 +38,6 @@ It means that you can give credentials to the administrators of your app without
 You can convert any entity into an **authenticatable entity**, allowing users to log in with it.
 
 ```yaml
-# manifest/backend.yml
 entities:
   🤒 Patient:
     authenticable: true # Makes entity authenticable.
@@ -180,6 +185,6 @@ Logout removes the token from future request headers.
 
   </TabItem>
   <TabItem value="rest" label="REST API" default>
-    Reset the `Authorization` header as you usually do, and you are good to go !
+    Reset the `Authorization` header as you usually do, and you are good to go!
   </TabItem>
 </Tabs>

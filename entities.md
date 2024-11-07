@@ -13,7 +13,7 @@ All entities are located in the `backend.yml` file under the **entities** proper
 
 Let's see a simple example:
 
-```yaml
+```yaml title="manifest/backend.yml"
 # manifest/backend.yml
 name: A pet app
 

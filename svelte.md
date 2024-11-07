@@ -37,8 +37,8 @@ npm i @mnfst/sdk
 
 In that example we are using a Cat entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
 
-```js
-// src/routes/+page.svelte
+```js title="src/routes/+page.svelte"
+
 
 <script lang="ts">
   import Manifest from "@mnfst/sdk";

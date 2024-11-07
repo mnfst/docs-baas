@@ -6,7 +6,7 @@ id: javascript-sdk
 
 Use the **Manifest JS SDK** to fetch and manipulate your data from your JS client.
 
-The SDK can be integrated in any frontend stack app like React, Vue, Svelte.... Or even by another server using NodeJS !
+The SDK can be integrated in any frontend stack app like React, Vue, Svelte.... Or even by another server using NodeJS!
 
 ## Install
 
@@ -19,13 +19,13 @@ npm i @mnfst/sdk
 Use the SDK directly in your favorite frontend:
 
 ```js
-import Manifest from "@mnfst/sdk";
+import Manifest from '@mnfst/sdk'
 
 // Initialize client with default backend URL: http://localhost:1111.
-const manifest = new Manifest();
+const manifest = new Manifest()
 
 // Initialize client with custom base URL.
-const manifest = new Manifest("https://example.com");
+const manifest = new Manifest('https://example.com')
 ```
 
 ## CRUD operations

@@ -10,6 +10,12 @@ The slug of the entity is by default the plural dasherized name of the entity, b
 
 All entities start with the `api/dynamic` prefix. Ex: `http://localhost:1111/api/dynamic/cats`
 
+:::tip
+
+An **OpenAPI** documentation for the REST API is automatically generated on http://localhost:1111/api. Have a look!
+
+:::
+
 ## GET /slug
 
 Gets a list of items from an entity.
@@ -60,8 +66,7 @@ GET http://localhost:1111/api/dynamic/cats?relations=owner&owner.name_eq=Jorge
 
 All list requests are paginated by default. Just use the `page` parameter to chose your page and the `perPage` param if you want to change the number of items per page.
 
-```json
-// Response format.
+```json title="Response format"
 {
   "data": [{...}, {...}],
   "currentPage": 1,

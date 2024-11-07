@@ -11,7 +11,7 @@ Properties are the characteristics of your [entities](entities). For example, a 
 
 You can add the properties to your entities in the **backend.yml file**
 
-```yaml
+```yaml title="manifest/backend.yml"
 name: Blog about cats
 entities:
   📝 Post:
@@ -81,7 +81,7 @@ An URL that links to an external page.
 A money field with a currency. Money properties can have up to 2 digits after coma.
 
 ```yaml
-- { name: price, type: money, options: { currency: "EUR" } }
+- { name: price, type: money, options: { currency: 'EUR' } }
 ```
 
 ##### Parameters
@@ -170,7 +170,7 @@ A given choice of options.
 - {
     name: status,
     type: choice,
-    options: { values: [draft, submitted, published], sequential: true },
+    options: { values: [draft, submitted, published], sequential: true }
   }
 ```
 

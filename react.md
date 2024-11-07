@@ -36,8 +36,7 @@ npm i @mnfst/sdk
 
 In that example we are using a Cat entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
 
-```js
-// App.tsx
+```js title="App.tsx"
 import Manifest from '@mnfst/sdk';
 import { useEffect, useState } from "react";
 

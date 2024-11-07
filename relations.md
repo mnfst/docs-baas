@@ -13,9 +13,7 @@ You can create **one-to-many** relationships or **many-to-many** relationships.
 
 The following example showcases the possibilities of **Manifest relations**:
 
-```yaml
-# manifest/backend.yml
-
+```yaml title="manifest/backend.yml"
 name: Basketball League 🏀
 
 entities:
