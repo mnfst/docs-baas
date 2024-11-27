@@ -4,7 +4,7 @@ id: policies
 
 # API Policies
 
-API Policies ensure that we provide specific access to resources for users. They are a way to implement **Authorization**.
+API Policies ensure that we provide specific access to resources for users. They are a way to implement **Authorization** following the RBAC (Role-Based Access Control) method. Indeed it is possible to create different entities (ex: User, Manager...) with different access to resources.
 
 ## Entity rules
 
@@ -14,7 +14,7 @@ Each entity has **5 rules** where one or several access policies can be applied:
 - **read**: see the detail and the list of items
 - **update**: update an existing item
 - **delete**: delete an existing item
-- **signup**: sign up as a new user (if entity is [authenticable](./auth.md#authenticable-entities))
+- **signup**: sign up as a new user (only for [authenticable entities](./auth.md#authenticable-entities))
 
 ## Access policies
 
@@ -22,7 +22,7 @@ The policies for each rule can be added to each [entity description](./entities.
 
 ```yaml
 entities:
-  🧾 Invoice:
+  Invoice 🧾:
     properties:
       - number
       - { name: issueDate, type: date }
@@ -37,9 +37,10 @@ entities:
 
 In this case, everyone can see the **Invoice** items, only logged-in **Users** can create new ones. Updating an Invoice is restricted to [Admins](./auth.md#admins) only and no one can delete them (not even Admins).
 
-:::info
+:::warning
+If **no policy** is specified for a rule, **the access is public** for the related action, thus anyone can manage records.
 
-If **no policy** is specified for a rule, it means that there are **no restrictions** for the related action.
+The only exception is the **update** of [single entities](./entities.md#singles) that is set to `admin` by default for convenience.
 :::
 
 | Prop       | Description                                                               | Type               |
@@ -62,7 +63,7 @@ There are 4 possible access types:
 
 ```yaml
 entities:
-  🗂️ Project:
+  Project 🗂️:
     properties:
       - name
     policies:
@@ -75,7 +76,7 @@ entities:
       delete:
         - access: 🚫 # Forbidden (no one).
 
-  👨‍💼 Contributor:
+  Contributor 👨‍💼:
     authenticable: true
     properties:
       - name
