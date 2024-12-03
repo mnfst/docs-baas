@@ -13,7 +13,7 @@ id: install
 Run the following on your terminal from the **root of your project**:
 
 ```bash
-npx add-manifest
+npx add-manifest@latest
 ```
 
 This will create a `manifest/backend.yml` file and add the required dependencies.

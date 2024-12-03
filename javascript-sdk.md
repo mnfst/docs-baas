@@ -83,7 +83,15 @@ const updatedCat = await manifest.from('cats').update(1, {
 })
 
 // Delete a cat.
-await manifest.from('cats').delete(1);
+await manifest.from('cats').delete(1)
+
+// Get single entity.
+const homeContent = await manifest.single('home').get()
+
+// Update single entity.
+await manifest.single('about').update({
+  title: 'New about us title'
+})
 
 ```
 

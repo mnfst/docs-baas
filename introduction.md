@@ -16,7 +16,7 @@ Here is an example of a complete Manifest app:
 name: Healthcare application
 
 entities:
-  👩🏾‍⚕️ Doctor:
+  Doctor 👩🏾‍⚕️:
     properties:
       - fullName
       - avatar
@@ -24,14 +24,14 @@ entities:
     belongsTo:
       - City
 
-  🤒 Patient:
+  Patient 🤒:
     properties:
       - fullName
       - { name: birthdate, type: date }
     belongsTo:
       - Doctor
 
-  🌍 City:
+  City 🌍:
     properties:
       - name
 ```
