@@ -43,12 +43,4 @@ A message will indicate that your app is ready, and a link to view it will appea
 
 Go to the "Settings" tab and click on "Reveal Config Vars" in the "Config Vars" section. Then add the 2 environment variables: `TOKEN_SECRET_KEY` (which you can generate at https://jwtsecret.com/generate) and `NODE_ENV=production`.
 
-## Create a start script for your Dyno
-
-![Heroku dynos script](./assets/images/deploy/heroku2.png)
-
-Heroku's task runners are called Dynos and the default one will run on `npm run start`.
-
-Commit, push, and deploy on Heroku if you haven't enabled the automatic deploys. In your Heroku panel, go to the "Resources" tab and activate Dynos to start the script.
-
 🎉 That's it! Now you can click on "Open app" to see it!
