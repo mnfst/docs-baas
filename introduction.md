@@ -6,7 +6,7 @@ slug: /
 
 # Welcome to Manifest Documentation 👋
 
-Manifest is the simplest **BaaS (Backend As A Service)** you will find.
+Manifest is the simplest **Headless CMS** you will find.
 
 It provides a complete backend to your client app without the hassle that comes with it. It actually fits into **a single YAML file** that generates a complete backend.
 
