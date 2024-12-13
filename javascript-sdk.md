@@ -2,7 +2,7 @@
 id: javascript-sdk
 ---
 
-# Javascript SDK
+# JavaScript SDK
 
 Use the **Manifest JS SDK** to fetch and manipulate your data from your JS client.
 
