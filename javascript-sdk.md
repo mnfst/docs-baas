@@ -105,7 +105,8 @@ When filtering, you have access to the following operators: `=`, `>`, `>=`, `<`,
 
 See the following quick start guides to integrate CASE with popular front-end frameworks:
 
+- [Get started with Angular](angular.md)
+- [Get started with Astro](astro.md)
 - [Get started with React](react.md)
 - [Get started with Svelte](svelte.md)
-- [Get started with Angular](angular.md)
 - [Get started with Vue](vue.md)
