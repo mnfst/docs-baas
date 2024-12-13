@@ -35,7 +35,7 @@ You can pass arguments using the long syntax:
 
 ## Property types
 
-Manifest vision of **property types** goes beyond software development typing and is already built-in for real world usages. For example, the [Money](#money) PropType is handier than [Number](#number) for managing amounts as it comes with a `currency` options and only allows 2 digits after the comma.
+Manifest vision of **property types** goes beyond software development typing and is already built-in for real world usages. For example, the [Money](#money) PropType is handier than [Number](#number) for managing amounts as it comes with a `currency` option that only allows 2 digits after the comma.
 
 Each PropType comes with built-in type [validation](./validation.md).
 
