@@ -97,7 +97,7 @@ await manifest.single('about').update({
 
 :::info
 
-When filtering, you have access to the following operators: `=`, `>`, `>=`, `<`, `<=`, `like` and `in`.
+When filtering, you have access to the following operators: `=`, `!=`, `>`, `>=`, `<`, `<=`, `like` and `in`.
 
 :::
 
