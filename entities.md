@@ -43,7 +43,7 @@ The seed replaces the previous data by the new one and thus should never be used
 
 :::
 
-## Collection entity params
+### Collection entity params
 
 You can pass different arguments to configure your entities. Example:
 
@@ -87,7 +87,7 @@ ContactPage:
     title: { required: true }
 ```
 
-## Single entity params
+### Single entity params
 
 You can pass different arguments to configure your single entities. Example:
 
