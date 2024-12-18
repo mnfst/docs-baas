@@ -15,9 +15,17 @@ Example: _public/storage/project/contract/Nov24/8dab3936m1p54a66-contract.pdf_
 
 :::warning
 
-Uploading a file or an image is an **independent action**. If you want to set this file as an item's property, you still need to create or update the item after, adding the new uploaded file path as the property value.
+If you want to set this file as an item's property, you need to upload the file first and then add the new uploaded file path as the property value creating or updating a record.
 
 :::
+
+## Add a BASE_URL variable
+
+Manifest stores absolute paths for convenience.
+
+By default the base url is set to `http://localhost:${port}` but you can change it using the `BASE_URL` environment variable in your `.env` file to adapt to your own base URL.
+
+Example: `BASE_URL=https://example.com/api`.
 
 ## Upload a file
 
@@ -36,7 +44,7 @@ A file should be related to an property with the [file property type](./properti
     const file = await manifest.from('invoices').upload('contract', file)
 
     console.log(file)
-    // Output: {"path":"invoices/contract/Oct2024/8dabo9qm1q3swvu-my-contract.pdf"}
+    // Output: {"path":"http://localhost:1111/invoices/contract/Oct2024/8dabo9qm1q3swvu-my-contract.pdf"}
 
 
     // Then you can store the path in the database.
@@ -60,7 +68,7 @@ A file should be related to an property with the [file property type](./properti
 
     // Response.
     {
-        "path":"invoices/contract/Oct2024/8dabo9qm1q3swvu-my-contract.pdf"
+        "path":"http://localhost:1111/invoices/contract/Oct2024/8dabo9qm1q3swvu-my-contract.pdf"
     }
     ```
 
@@ -86,8 +94,8 @@ Each image uploaded will be optimized and resized into several sizes based on [t
 
     console.log(image)
     // Output: {
-    // "medium": "cats/avatar/Oct2024/8dabo9qm1q4n1nk-medium.jpg",
-    // "thumbnail": "cats/avatar/Oct2024/8dabo9qm1q4n1nk-thumbnail.jpg"
+    // "medium": "http://localhost:1111/cats/avatar/Oct2024/8dabo9qm1q4n1nk-medium.jpg",
+    // "thumbnail": "http://localhost:1111/cats/avatar/Oct2024/8dabo9qm1q4n1nk-thumbnail.jpg"
     // }
 
     // Then you can store the path in the database.
@@ -111,8 +119,8 @@ Each image uploaded will be optimized and resized into several sizes based on [t
 
     // Response.
     {
-     "medium": "cats/avatar/Oct2024/8dabo9qm1q4n1nk-medium.jpg",
-     "thumbnail": "cats/avatar/Oct2024/8dabo9qm1q4n1nk-thumbnail.jpg"
+     "medium": "http://localhost:1111/cats/avatar/Oct2024/8dabo9qm1q4n1nk-medium.jpg",
+     "thumbnail": "http://localhost:1111/cats/avatar/Oct2024/8dabo9qm1q4n1nk-thumbnail.jpg"
     }
     ```
 

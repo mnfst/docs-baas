@@ -34,6 +34,7 @@ You can filter by [property](properties.md) to refine the list of items. Use suf
 | Suffix     | Description           | Example                    |
 | ---------- | --------------------- | -------------------------- |
 | **\_eq**   | equals                | `isActive_eq=true`         |
+| **\_neq**  | not equals            | `name_neq=alice`           |
 | **\_gt**   | greater than          | `birthdate_gt=2020-01-01 ` |
 | **\_gte**  | greater than or equal | `age_gte=4`                |
 | **\_lt**   | less than             | `amount_lt=400`            |
