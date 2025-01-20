@@ -119,7 +119,7 @@ Provide a Request Payload in JSON:
 
 ### PUT /slug/\:id
 
-Update an item.
+Update an item (fully replace). Blank properties and relations will be deleted.
 
 Provide a Request Payload in JSON:
 
@@ -127,6 +127,18 @@ Provide a Request Payload in JSON:
 {
   "age": 2
   "name": "Milo"
+}
+```
+
+### PATCH /slug/\:id
+
+Update an item partially. Leaving blank properties and relations will not change them.
+
+Provide a Request Payload in JSON:
+
+```json title="Request body"
+{
+  "age": 3
 }
 ```
 
