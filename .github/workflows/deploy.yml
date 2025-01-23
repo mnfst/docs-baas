@@ -12,14 +12,7 @@ jobs:
     steps:
       - name: Trigger Vercel Redeployment
         env:
-          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
           VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+          VERCEL_HOOK_TOKEN: ${{ secrets.VERCEL_HOOK_TOKEN }}
         run: |
-          curl -X POST "https://api.vercel.com/v13/deployments" \
-            -H "Authorization: Bearer $VERCEL_TOKEN" \
-            -H "Content-Type: application/json" \
-            -d '{
-              "name": "manifest-website",
-              "projectId": "'"$VERCEL_PROJECT_ID"'",
-              "teamId": "'"$VERCEL_TEAM_ID"'"
-            }'
+          curl -X POST "https://api.vercel.com/v1/integrations/deploy/${{ secrets.VERCEL_PROJECT_ID }}/${{ secrets.VERCEL_HOOK_TOKEN }}"
