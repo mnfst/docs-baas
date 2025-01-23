@@ -82,6 +82,11 @@ const updatedCat = await manifest.from('cats').update(1, {
   age: 2
 })
 
+// Patch a cat.
+const patchedCat = await manifest.from('cats').patch(1, {
+  age: 3
+})
+
 // Delete a cat.
 await manifest.from('cats').delete(1)
 

@@ -172,3 +172,44 @@ To store or update an item with its relations, you have to pass the relation id(
 When storing **many-to-many** relations, you always need to **pass an array**, even if you just have one single value.
 
 :::
+
+### Update relations
+
+As for updating properties, you can either do a **full replacement** using the update function (PUT) or a **partial replacement** using the patch function (PATCH).
+
+<Tabs>
+  <TabItem value="sdk" label="JS SDK" default>
+    ```js
+      // Replaces the whole skill relations by the new skillIds array.
+      await manifest.from('players').update(1, {
+        name: 'Mike',
+        teamId: 10,
+        skillIds: [10, 11]
+      })
+
+      // Updates the team without changing the skills or the name.
+      await manifest.from('players').patch(1, {teamId: 5})
+    ```
+
+  </TabItem>
+  <TabItem value="rest" label="REST API" default>
+    ```http
+    // Replaces the whole skill relations by the new skillIds array.
+    PUT http://localhost:1111/api/dynamic/players/1
+    Content-Type: application/json
+    {
+      name: 'Mike',
+      teamId: 10,
+      skillIds: [10, 11]
+    }
+
+    // Updates the team without changing the skills or the name.
+    PATCH http://localhost:1111/api/dynamic/players/1
+    Content-Type: application/json
+    {
+      teamId: 5,
+    }
+    ```
+
+  </TabItem>
+</Tabs>
