@@ -19,6 +19,7 @@ jobs:
             -H "Authorization: Bearer $VERCEL_TOKEN" \
             -H "Content-Type: application/json" \
             -d '{
-              "name": "my-project",
-              "projectId": "'"$VERCEL_PROJECT_ID"'"
+              "name": "manifest-website",
+              "projectId": "'"$VERCEL_PROJECT_ID"'",
+              "teamId": "'"$VERCEL_TEAM_ID"'"
             }'
