@@ -3,7 +3,7 @@ id: properties
 title: Properties
 ---
 
-# Add properties to an entity
+# Properties
 
 Properties are the characteristics of your [entities](entities). For example, a **Product** can have properties like `name`, `description`, `price`...
 

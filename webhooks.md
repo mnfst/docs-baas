@@ -56,7 +56,7 @@ Manifest does not enforce HTTP request success or failure; the lifecycle process
 
 Manifest attaches a **JSON body** with key information about the record concerned to the webhook HTTP request.
 
-Each event is different, so is the body of the webhook HTTP Request. Nevertheless the main structure of the body will remain the same and only the `record` value will change.
+The main structure of the body of the triggered HTTP requests will remain the same and only the `record` value will change: on _before_ events the `record` will contain your payload, whereas in _after_ requests, the `record` value will reflect the item after the operation.
 
 This is the structure of the body:
 
@@ -74,11 +74,13 @@ This is the structure of the body:
 
 ## Hook events
 
-| Name             | "record" content       | Description              |
-| ---------------- | ---------------------- | ------------------------ |
-| **beforeCreate** | Item DTO               | Before creating a record |
-| **afterCreate**  | Created item (with id) | After creating a record  |
-| **beforeUpdate** | Item DTO               | Before updating a record |
-| **afterUpdate**  | Updated item (with id) | After updating a record  |
-| **beforeDelete** | id only                | Before deleting a record |
-| **afterDelete**  | Deleted item (with id) | After deleting a record  |
+This is the list and description of the 8 hook events available. All of them are related to an [entity](./entities.md)
+
+| Name             | Description              |
+| ---------------- | ------------------------ |
+| **beforeCreate** | Before creating a record |
+| **afterCreate**  | After creating a record  |
+| **beforeUpdate** | Before updating a record |
+| **afterUpdate**  | After updating a record  |
+| **beforeDelete** | Before deleting a record |
+| **afterDelete**  | After deleting a record  |
