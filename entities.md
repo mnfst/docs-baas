@@ -3,7 +3,7 @@ id: entities
 title: Entities
 ---
 
-# Create an entity
+# Entities
 
 An entity is a model of objects linked to real-world concepts. Creating an entity in manifest generates **CRUD endpoints** that can be used by the [REST API](rest-api.md) or the [SDK](javascript-sdk.md).
 
