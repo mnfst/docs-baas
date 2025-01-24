@@ -28,7 +28,7 @@ entities:
         # Pass .env variables with ${} interpolation.
         - {
             url: 'https://another-webhook.com',
-            headers: { authorization: 'Bearer ${API_KEY}' },
+            headers: { authorization: 'Bearer ${API_KEY}' }
           }
         # Specific HTTP method.
         - { url: 'https://another-one.com', method: 'PATCH' }
