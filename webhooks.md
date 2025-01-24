@@ -4,9 +4,9 @@ id: webhooks
 
 # Webhooks
 
-**Webhooks** are a way for an app to send automated real-time notifications to another app when something occurs. That "something" is called an [event](./webhooks.md#hook-events), and in Manifest you have 8 of those where you can hook HTTP requests.
+**Webhooks** are a way for an app to send automated real-time notifications to another app when a specific [event](./webhooks.md#hook-events) occurs. In Manifest, there are 8 predefined events where you can hook HTTP requests.
 
-Webhooks are useful to connect to connect other applications or tho trigger a micro-service like notifying someone or update a file.
+Webhooks are useful to connect other applications or to trigger a micro-service like notifying someone or update a file.
 
 ## Syntax
 
@@ -28,7 +28,7 @@ entities:
         # Pass .env variables with ${} interpolation.
         - {
             url: 'https://another-webhook.com',
-            headers: { authorization: 'Bearer ${API_KEY}' }
+            headers: { authorization: 'Bearer ${API_KEY}' },
           }
         # Specific HTTP method.
         - { url: 'https://another-one.com', method: 'PATCH' }
@@ -48,7 +48,7 @@ Available HTTP Methods are `GET`, `POST`, `PUT`, `PATCH` and `DELETE`.
 
 :::note
 
-Manifest does not care if the HTTP requests succeeds or fails. The lifecycle will continue anyway.
+Manifest does not enforce HTTP request success or failure; the lifecycle process continues regardless.
 
 :::
 
@@ -78,7 +78,7 @@ This is the structure of the body:
 | ---------------- | ---------------------- | ------------------------ |
 | **beforeCreate** | Item DTO               | Before creating a record |
 | **afterCreate**  | Created item (with id) | After creating a record  |
-| **beforeUpdate** | Item DTO               | Before creating a record |
+| **beforeUpdate** | Item DTO               | Before updating a record |
 | **afterUpdate**  | Updated item (with id) | After updating a record  |
 | **beforeDelete** | id only                | Before deleting a record |
 | **afterDelete**  | Deleted item (with id) | After deleting a record  |
