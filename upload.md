@@ -25,7 +25,13 @@ Manifest stores absolute paths for convenience.
 
 By default the base url is set to `http://localhost:${port}` but you can change it using the `BASE_URL` environment variable in your `.env` file to adapt to your own base URL.
 
-Example: `BASE_URL=https://example.com/api`.
+Example: `BASE_URL=https://example.com`.
+
+:::warning
+
+Changing the `BASE_URL` will not change the path of images and files that are already stored but it will impact the new ones.
+
+:::
 
 ## Upload a file
 

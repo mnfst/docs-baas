@@ -136,6 +136,11 @@ A file upload. Read more in the [file upload doc](./upload.md#upload-a-file).
 - { name: document, type: file }
 ```
 
+:::note
+
+Manifest stores the **absolute paths** of uploaded files. Use the [`BASE_URL`](./upload.md#add-a-base_url-variable) environment variable to adapt it to your domain.
+:::
+
 ### Image
 
 An image upload. The different sizes should be provided to generate several sizes of it. Read more in the [image upload doc](./upload.md#upload-an-image).
@@ -148,6 +153,12 @@ An image upload. The different sizes should be provided to generate several size
       { sizes: { small: { height: 90, width: 90 }, large: { width: 200 } } }
   }
 ```
+
+:::note
+
+Manifest stores the **absolute paths** of uploaded images. Use the [`BASE_URL`](./upload.md#add-a-base_url-variable) environment variable to adapt it to your domain.
+
+:::
 
 ##### Parameters
 
