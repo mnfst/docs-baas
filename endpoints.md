@@ -5,11 +5,19 @@ title: Endpoints
 
 # Endpoints
 
-You can add your own **custom endpoints** that will execute a handler function in **JavaScript** (.js file). Handlers are simple [ExpressJS](https://expressjs.com/) middlewares with an extra touch.
+A custom endpoint is a user-defined API route that executes specific logic on the backend. Unlike built-in routes, custom endpoints allow you to control how data is processed, retrieved, or modified in response to client requests.
+
+For example, instead of using a generic API to update a user's score, you can define an endpoint like `/competitors/:id/increase` that directly increments the score of a given competitor.
+
+Custom endpoints in Manifest follow a simple structure where you define:
+
+- **A path (path):** The URL where the endpoint can be accessed.
+- **A method (method):** The type of HTTP request (GET, POST, etc.).
+- **A handler (handler):** The JavaScript function that processes the request.
 
 ## Syntax
 
-This is an example of a simple endpoint that returns a "hello world" message when requesting `GET /endpoints/hello-world`.
+This is an example of a simple endpoint that returns a "Hello world from my new endpoint !" message when requesting `GET /endpoints/hello-world`.
 
 ```yaml title="manifest/backend.yml"
 endpoints:
@@ -25,11 +33,7 @@ module.exports = async (req, res) => {
 }
 ```
 
-In the YAML file, we choose the path, method and handler.
-
-A Handler in **JS** needs to be created in the `/manifest/handlers` folder with the name specified as "handler", in our case `helloWorld.js`.
-
-**Manifest handlers** are just [ExpressJS middlewares](https://expressjs.com/en/guide/using-middleware.html) exposed with `Request` and `Response` params.
+Manifest handlers are just ExpressJS middlewares exposed with `Request` and `Response` parameters. Place the handler file in the `/manifest/handlers` folder. For example, if the handler is `helloWorld`, the file should be `helloWorld.js`.
 
 :::tip
 
@@ -53,16 +57,16 @@ Each endpoint can be defined in the YAML file with the following values:
 
 The next thing you may want to do is to **read and write data from your app**. This can be done using the Manifest backend SDK that shares the same CRUD and upload functions as the [JS SDK](http://localhost:3000/docs/javascript-sdk) for the front-end.
 
-Take the following example of a backend.yml file of a **leaderboard**:
+Take the following example of a `backend.yml` file of a **leaderboard**:
 
 ```yaml title="manifest/backend.yml"
 name: Leaderboard app 🏅
 
 entities:
-🏆 Competitor:
-  properties:
-    - name
-    - { name: score, type: number }
+  Competitor:
+    properties:
+      - name
+      - { name: score, type: number }
 
 endpoints:
   increaseScore:
@@ -86,7 +90,7 @@ module.exports = async (req, res, manifest) => {
 
   // Patch the record (changing only specified prop "score").
   await manifest.from('competitors').patch(competitor.id, {
-    score: newScore
+    score: newScore,
   })
 
   // Return updated score.
