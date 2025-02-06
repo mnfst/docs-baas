@@ -7,7 +7,7 @@ title: Endpoints
 
 A custom endpoint is a user-defined API route that executes specific logic on the backend. Unlike built-in routes, custom endpoints allow you to control how data is processed, retrieved, or modified in response to client requests.
 
-For example, instead of using a generic API to update a user's score, you can define an endpoint like `/competitors/:id/increase` that directly increments the score of a given competitor.
+For example,you can define an endpoint like `/competitors/:id/increase` that directly increments the score of a given competitor.
 
 Custom endpoints in Manifest follow a simple structure where you define:
 
