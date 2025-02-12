@@ -76,7 +76,7 @@ Go back to your codebase and open the `package.json` file and add a new **start*
 
 After that you will be able to run Manifest for production with `npm run start`.
 
-### Docker
+## Docker
 
 [Docker](https://www.docker.com/) is a popular choice among developers. It uses containerization to ensure that the app will work well whatever the environment.
 
