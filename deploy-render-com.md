@@ -4,6 +4,12 @@ id: deploy-render-com
 
 # Deploy Manifest on Render.com
 
+:::warning
+
+This guide does not ensure persistent data for the [database](./deploy.md#database) and the [storage](./deploy.md#storage).
+
+:::
+
 [Render](https://render.com) is a popular cloud provider that enables developers to ship apps without hassle.
 
 ### Create a "start" script for production
