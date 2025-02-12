@@ -4,6 +4,12 @@ id: deploy-digital-ocean
 
 # Deploy Manifest on DigitalOcean
 
+:::warning
+
+This guide does not ensure persistent data for the [database](./deploy.md#database) and the [storage](./deploy.md#storage).
+
+:::
+
 [DigitalOcean](https://www.digitalocean.com/) is a popular hosting provider that delivers a high quality service. This guide shows how to deploy Manifest using DigitalOcean App Platform, a service to deploy apps with very few infrastructure configuration.
 
 First, log in or create an account on DigitalOcean.

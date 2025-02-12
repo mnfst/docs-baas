@@ -4,6 +4,12 @@ id: deploy-heroku
 
 # Deploy Manifest on Heroku
 
+:::warning
+
+This guide does not ensure persistent data for the [database](./deploy.md#database) and the [storage](./deploy.md#storage).
+
+:::
+
 [Heroku](https://heroku.com/) is a popular cloud app platform provider that supports many languages and provides a nice interface to deploy apps.
 
 ### Create a "start" script for production

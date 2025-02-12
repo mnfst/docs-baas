@@ -4,6 +4,12 @@ id: deploy-fly-io
 
 # Deploy Manifest on Fly.io
 
+:::warning
+
+This guide does not ensure persistent data for the [database](./deploy.md#database) and the [storage](./deploy.md#storage).
+
+:::
+
 [Fly.io](https://fly.io) is a cloud provider that focuses on user experience and zero-config deployments.
 
 ### Create a "start" script for production
