@@ -12,12 +12,12 @@ Nevertheless there is still the possibility to adapt your Manifest app to your n
 
 General environment variables.
 
-| Variable      | Default                           | Description                                                                                                                                  |
-| ------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| NODE_ENV      | `development`                     | The app environment. For production and staging instances, it should be set to `production`, mostly to turn off live reload on file change.  |
-| PORT          | `1111`                            | The port of your app. You can either adapt your server settings to listen to `1111` or change here to your server's default (usually `3000`) |
-| BASE_URL      | `http://localhost:$PORT`          | The base url of your backend. Change it when deploying if you use [file or image upload](./upload.md)                                        |
-| OPEN_API_DOCS | true unless `NODE_ENV=production` | Shows or not the OpenAPI doc (formerly Swagger) for your REST API at `/api`. Make sure to set to `true` if you want to display on production |
+| Variable      | Default                             | Description                                                                                                                                  |
+| ------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| NODE_ENV      | `development`                       | The app environment. For production and staging instances, it should be set to `production`, mostly to turn off live reload on file change.  |
+| PORT          | `1111`                              | The port of your app. You can either adapt your server settings to listen to `1111` or change here to your server's default (usually `3000`) |
+| BASE_URL      | `http://localhost:$PORT`            | The base url of your backend. Change it when deploying if you use [file or image upload](./upload.md)                                        |
+| OPEN_API_DOCS | `true` unless `NODE_ENV=production` | Shows or not the OpenAPI doc (formerly Swagger) for your REST API at `/api`. Make sure to set to `true` if you want to display on production |
 
 ## Paths
 
@@ -31,7 +31,7 @@ Environment variables related to paths.
 
 ## Database
 
-By default Manifest runs with [SQLite](https://www.sqlite.org/) to enable instant launch with the `npx add-manifest@latest` command. We recommend to switch to [PostgreSQL](https://www.postgresql.org/) on production for more robustness and use be able to choose from a large number of cloud/DBaaS providers.
+By default Manifest runs with [SQLite](https://www.sqlite.org/) to enable instant launch with the `npx add-manifest@latest` command. We recommend to switch to [PostgreSQL](https://www.postgresql.org/) on production for more robustness and to choose from a large number of cloud/DBaaS providers.
 
 | Variable      | Default                | Description                                                               | Applies To |
 | ------------- | ---------------------- | ------------------------------------------------------------------------- | ---------- |

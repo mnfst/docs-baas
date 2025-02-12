@@ -16,9 +16,9 @@ The server needs at least [Node.js v18 or more](https://nodejs.org/fr) and a pro
 
 ### Database
 
-Manifest works by default in local with SQLite but we recommend to [switch to PostgreSQL](./config.md#database) when deploying.
+Manifest works by default in local with SQLite but we recommend to [switch to PostgreSQL](./config.md#database) for production deployments.
 
-All popular hosting providers have their managed PostgreSQL solutions and there is many DB-as-a-Service providers like [Neon](https://neon.tech/) that offers generous free-tier to get started. Here is a list of popular services:
+All popular hosting providers have their managed PostgreSQL solutions and there is many DB-as-a-Service providers like [Neon](https://neon.tech/) that offer generous free-tier to get started. Here is a list of popular services:
 
 | Provider            | Service Name                                                                                          |
 | ------------------- | ----------------------------------------------------------------------------------------------------- |
