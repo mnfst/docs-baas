@@ -33,3 +33,17 @@ You can now:
 If you already have a frontend app, you can run the `npx add-manifest` command from your **project root** to include it in your repo.
 
 :::
+
+### Note with PNMP
+
+As [PNPM](https://pnpm.io/fr/) blocks postinstall scripts, we have to adapt the `þackage.json`. Add this to your `package.json` file before doing `pnpm install`:
+
+```json
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@nestjs/core",
+      "sharp",
+      "sqlite3"
+    ]
+  }
+```
