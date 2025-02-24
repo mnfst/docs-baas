@@ -13,6 +13,10 @@ A `public/storage` folder is automatically created when needed. Uploaded files a
 
 Example: _public/storage/project/contract/Nov24/8dab3936m1p54a66-contract.pdf_
 
+:::info  
+Manifest also supports **S3-compatible storage** for persisting files externally. See the [S3 Storage documentation](./s3-storage) for setup details.  
+:::
+
 :::warning
 
 If you want to set this file as an item's property, you need to upload the file first and then add the new uploaded file path as the property value creating or updating a record.
