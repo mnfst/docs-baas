@@ -37,6 +37,7 @@ By default Manifest runs with [SQLite](https://www.sqlite.org/) to enable instan
 | ------------- | ---------------------- | ------------------------------------------------------------------------- | ---------- |
 | DB_CONNECTION | `sqlite`               | Choose `postgres` to switch to PostgreSQL                                 | Both       |
 | DB_PATH       | `/manifest/backend.db` | Path of the database. Your server should have access to this path locally | SQLite     |
+| DB_HOST       | `localhost`            | Database host                                                             | PostgreSQL |
 | DB_PORT       | `5432`                 | Database port                                                             | PostgreSQL |
 | DB_USERNAME   | `postgres`             | Database username                                                         | PostgreSQL |
 | DB_PASSWORD   | `postgres`             | Database password                                                         | PostgreSQL |
