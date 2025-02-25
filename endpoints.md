@@ -21,16 +21,13 @@ This is an example of a simple endpoint that returns a "Hello world from my new 
 
 ```yaml title="manifest/backend.yml"
 endpoints:
-  helloWorld:
-    path: /hello-world
-    method: GET
-    handler: helloWorld
+  helloWorld: { path: /hello-world, method: GET, handler: helloWorld }
 ```
 
 ```js title="manifest/handlers/helloWorld.js"
 module.exports = async (req, res) => {
-  res.json({ message: 'Hello world from my new endpoint !' })
-}
+  res.json({ message: "Hello world from my new endpoint !" });
+};
 ```
 
 Manifest handlers are just ExpressJS middlewares exposed with `Request` and `Response` parameters. Place the handler file in the `/manifest/handlers` folder. For example, if the handler is `helloWorld`, the file should be `helloWorld.js`.
@@ -82,20 +79,20 @@ We can now add the handler in the `/manifest/handlers` folder:
 module.exports = async (req, res, manifest) => {
   // Get the requested competitor with the Manifest backend SDK.
   const competitor = await manifest
-    .from('competitors')
-    .findOneById(req.params['id'])
+    .from("competitors")
+    .findOneById(req.params["id"]);
 
   // Add 1 to the competitor score.
-  const newScore = score + 1
+  const newScore = score + 1;
 
   // Patch the record (changing only specified prop "score").
-  await manifest.from('competitors').patch(competitor.id, {
+  await manifest.from("competitors").patch(competitor.id, {
     score: newScore,
-  })
+  });
 
   // Return updated score.
-  res.json({ newScore })
-}
+  res.json({ newScore });
+};
 ```
 
 The custom endpoint increases the score of a competitor. The path integrates an `id` route param that we can use as `req.params['id']` from our handler.
