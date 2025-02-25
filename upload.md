@@ -7,7 +7,7 @@ import TabItem from '@theme/TabItem';
 
 # File and Image upload
 
-Manifest comes with a **built-in local storage** for uploaded assets. [File upload](#upload-a-file) lets you update pretty much anything whereas [image upload](#upload-an-image) comes with a simple resize system.
+Manifest comes with a **built-in storage system** to upload assets locally (default) or in a [S3 bucket](./s3-storage). You can use [file upload](#upload-a-file) to let your users update any kind of file, or [image upload](#upload-an-image) for image resizing.
 
 A `public/storage` folder is automatically created when needed. Uploaded files and images will be renamed with a unique name and stored in a specific folder based on entity and property name, ending by a folder with the current month name to prevent having to many files in a single folder.
 

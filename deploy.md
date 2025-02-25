@@ -41,13 +41,13 @@ While you could technically create a [Docker volume](https://docs.docker.com/eng
 
 ### Storage
 
-As for the database, uploaded files and images will be flushed when the container restarts if using [Docker](#docker).
+Manifest supports local storage and S3 storage.
 
-:::danger
+With **local storage**, files are saved on disk but will be lost when the container restarts if you are using [Docker](https://www.docker.com/).
 
-We are currently working on integrating **S3 storage services** to prevent those data losses. In the meantime we **do not recommend** to deploy your app in prod if you rely on [file](./upload.md#upload-a-file) or [image](./upload#upload-an-image) uploads.
+With **S3 storage**, files are stored externally, ensuring they are persistent and accessible.
 
-:::
+Follow the [S3 Storage documentation](./s3-storage) to set it up.
 
 ### Environment variables
 
