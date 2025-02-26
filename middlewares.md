@@ -50,7 +50,7 @@ You can add **several middlewares** for an event. They will be processed sequent
 
 Manifest passes the [JS SDK](./javascript-sdk.md) to handler functions as third argument. You can use it to fetch or write data.
 
-```js title="manifest/handlers/patch-document-name-if-empty.js"
+```js title="manifest/handlers/patchDocumentNameIfEmpty.js"
 module.exports = async (req, res, manifest) => {
   // If the 'name' property of the item is empty.
   if (!req.body['name']) {
