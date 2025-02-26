@@ -35,7 +35,7 @@ If you want to keep it short you can simply pass the **validation** object to th
 
 ```yaml
 entities:
-  🧑🏽‍🦱 Author:
+  Author 🧑🏽‍🦱:
     properties:
       - name
       - { name: email, type: email, validation: { isNotEmpty: true } }
