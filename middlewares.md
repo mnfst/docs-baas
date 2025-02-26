@@ -35,7 +35,7 @@ This example triggers the handler located at `/manifest/handlers/setDate.js` bef
 
 ```js title="manifest/handlers/setDate.js"
 module.exports = async (req, res) => {
-  console.log('Hello from the handler !')
+  console.log('Hello from the handler!')
 
   req.body['date'] = new Date()
 }
@@ -52,20 +52,20 @@ Manifest passes the [JS SDK](./javascript-sdk.md) to handler functions as third 
 
 ```js title="manifest/handlers/patch-document-name-if-empty.js"
 module.exports = async (req, res, manifest) => {
-  // If the property "name" of the item is empty.
-  if(!req.body['name']) {
-      // Get the user's from the request body.
-      const user = await manifest.from('users').findOneById(req.body['userId'])
+  // If the 'name' property of the item is empty.
+  if (!req.body['name']) {
+    // Get the user from the request body.
+    const user = await manifest.from('users').findOneById(req.body['userId'])
 
-      // Set a custom name based on the user.
-      req.body['name'] = `${user.name}'s untitled document'
+    // Set a custom name based on the user.
+    req.body['name'] = `${user.name}'s untitled document`
   }
 }
 ```
 
 ## Events
 
-This is the list and description of the 8 events available where you can attach middlewares. All of them are related to an [entity](./entities.md)
+This is the list and description of the 6 events available where you can attach middlewares. All of them are related to an [entity](./entities.md)
 
 | Name             | Description              |
 | ---------------- | ------------------------ |
