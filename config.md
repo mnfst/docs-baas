@@ -23,11 +23,12 @@ General environment variables.
 
 Environment variables related to paths.
 
-| Variable                 | Default                 | Description                                                                                  |
-| ------------------------ | ----------------------- | -------------------------------------------------------------------------------------------- |
-| PUBLIC_FOLDER            | `/public`               | The public folder to show [static files](https://expressjs.com/en/starter/static-files.html) |
-| MANIFEST_HANDLERS_FOLDER | `/manifest/handlers`    | The folder to put your handlers functions for [custom endpoints](./endpoints.md)             |
-| MANIFEST_FILE_PATH       | `/manifest/backend.yml` | The relative or absolute path of your Manifest YAML file                                     |
+| Variable                 | Default                 | Description                                                                                                                        |
+| ------------------------ | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| PUBLIC_FOLDER            | `/public`               | The public folder to show [static files](https://expressjs.com/en/starter/static-files.html)                                       |
+| MANIFEST_HANDLERS_FOLDER | `/manifest/handlers`    | The folder to put your handlers functions for [custom endpoints](./endpoints.md)                                                   |
+| MANIFEST_FILE_PATH       | `/manifest/backend.yml` | The relative or absolute path of your Manifest YAML file                                                                           |
+| TOKEN_SECRET_KEY         | `-`                     | The secret key behind the JWT authentication. Required on production, you can [generate one here](https://jwtsecret.com/generate). |
 
 ## Database
 
@@ -43,3 +44,16 @@ By default Manifest runs with [SQLite](https://www.sqlite.org/) to enable instan
 | DB_PASSWORD   | `postgres`             | Database password                                                         | PostgreSQL |
 | DB_DATABASE   | `manifest`             | Database name                                                             | PostgreSQL |
 | DB_SSL        | `false`                | Require SSL for DB connection. Set to true if using remote DB.            | PostgreSQL |
+
+### Example config with PostgreSQL
+
+Here is an example of dotenv file to connect to a remote managed database with SSL:
+
+```
+DB_CONNECTION=postgres
+DB_HOST=my-host.com
+DB_USERNAME=owner
+DB_PASSWORD=xxxxx
+DB_DATABASE=my_app
+DB_SSL=true
+```
