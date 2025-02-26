@@ -6,7 +6,7 @@ id: rest-api
 
 An alternative to the [JS SDK](javascript-sdk.md) to connect to your backend is through the **REST API**.
 
-The slug of the entity is by default the plural dasherized name of the entity, but you can change it in the [params](entities.md#entity-params)
+The slug of the entity is by default the plural dasherized name of the entity, but you can change it in the [params](entities.md#collection-entity-params)
 
 All entities start with the `api` prefix followed by `collections` for [collections](#collections) and `singles` for [single entities](#singles).
 
