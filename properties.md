@@ -26,12 +26,13 @@ entities:
 
 You can pass arguments using the long syntax:
 
-| Option         | Default  | Type       | Description                                                                   |
-| -------------- | -------- | ---------- | ----------------------------------------------------------------------------- |
-| **type**       | "string" | _PropType_ | The [Property type](#property-types) (text, number, email, location...)       |
-| **hidden**     | `false`  | boolean    | If the property should be hidden in the API response                          |
-| **options**    | -        | Object     | Specific options depending on [property type](#property-types)                |
-| **validation** | -        | Object     | The [property validators](./validation.md) that each request compares against |
+| Option         | Default  | Type       | Description                                                                                               |
+| -------------- | -------- | ---------- | --------------------------------------------------------------------------------------------------------- |
+| **type**       | "string" | _PropType_ | The [Property type](#property-types) (text, number, email, location...)                                   |
+| **hidden**     | `false`  | boolean    | If the property should be hidden in the API response                                                      |
+| **options**    | -        | Object     | Specific options depending on [property type](#property-types)                                            |
+| **validation** | -        | Object     | The [property validators](./validation.md) that each request compares against                             |
+| **default**    | -        | any        | The default value. When creating an item, if the property is not specified it will default to this value. |
 
 ## Property types
 
@@ -89,7 +90,7 @@ An URL that links to an external page.
 A money field with a currency. Money properties can have up to 2 digits after the comma.
 
 ```yaml
-- { name: price, type: money, options: { currency: 'EUR' } }
+- { name: price, type: money, options: { currency: "EUR" } }
 ```
 
 ##### Parameters
@@ -108,7 +109,7 @@ Basic date field.
 
 ### Timestamp
 
-Timestamp field.
+Timestamp field (ISO 8601 Format)
 
 ```yaml
 - { name: acquiredAt, type: timestamp }
@@ -150,7 +151,7 @@ An image upload. The different sizes should be provided to generate several size
     name: photo,
     type: image,
     options:
-      { sizes: { small: { height: 90, width: 90 }, large: { width: 200 } } }
+      { sizes: { small: { height: 90, width: 90 }, large: { width: 200 } } },
   }
 ```
 
@@ -189,7 +190,7 @@ A given choice of options.
 - {
     name: status,
     type: choice,
-    options: { values: [draft, submitted, published], sequential: true }
+    options: { values: [draft, submitted, published], sequential: true },
   }
 ```
 
