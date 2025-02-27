@@ -17,9 +17,15 @@ entities:
   📝 Post:
     properties:
       - name # Short syntax for string type.
-      - { name: content, type: text } # Property type specified.
+      - { name: content, type: text } # Long syntax for other types.
       - { name: publishedAt, type: date }
       - { name: authorEmail, type: email, hidden: true } # Extra options.
+      - {
+          name: status,
+          type: choice,
+          options: { values: [draft, pending, published] },
+          default: draft, # Default value if property not specified.
+        }
 ```
 
 ## Property params
