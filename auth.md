@@ -39,7 +39,7 @@ You can convert any entity into an **authenticatable entity**, allowing users to
 
 ```yaml
 entities:
-  🤒 Patient:
+  Patient 🤒:
     authenticable: true # Makes entity authenticable.
     properties:
       - name

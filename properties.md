@@ -14,7 +14,7 @@ You can add the properties to your entities in the **backend.yml file**
 ```yaml title="manifest/backend.yml"
 name: Blog about cats
 entities:
-  📝 Post:
+  Post 📝:
     properties:
       - name # Short syntax for string type.
       - { name: content, type: text } # Long syntax for other types.

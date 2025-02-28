@@ -74,7 +74,7 @@ This is the structure of the body:
 
 ## Hook events
 
-This is the list and description of the 8 hook events available. All of them are related to an [entity](./entities.md)
+This is the list and description of the 6 hook events available. All of them are related to an [entity](./entities.md)
 
 | Name             | Description              |
 | ---------------- | ------------------------ |
