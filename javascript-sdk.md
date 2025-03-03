@@ -33,6 +33,10 @@ const manifest = new Manifest('https://example.com')
 Perform all CRUD (Create Read Update Delete) operations with the SDK.
 
 ```js
+
+// Get one cat by id.
+const cat = await manifest.from('cats').findOneById(1)
+
 // Get all cats.
 const cats = await manifest.from('cats').find()
 
