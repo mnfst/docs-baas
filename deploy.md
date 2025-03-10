@@ -108,7 +108,7 @@ CMD ["npm", "run", "start"]
 Here are some quick guides to launch your app in a few minutes:
 
 <div class="card-container">
-  <a href="./deploy-digital-ocean" class="card">
+  <a href="https://manifest.build/integrations/digital-ocean" class="card">
     <p>Deploy Manifest on DigitalOcean App Platform</p>
     <span>➡️</span>
   </a>
@@ -118,7 +118,7 @@ Here are some quick guides to launch your app in a few minutes:
     <span>➡️</span>
   </a>
   
-  <a href="./deploy-render-com" class="card">
+  <a href="https://manifest.build/integrations/render" class="card">
     <p>Deploy Manifest on Render.com</p>
     <span>➡️</span>
   </a>
