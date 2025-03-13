@@ -23,9 +23,9 @@ Notice the `TOKEN_SECRET_KEY` variable in your `.env` file ? This is the key tha
 
 Admins are a built-in entity that are **the only ones with access to the admin panel** (located at http://localhost:1111 by default). The admins are usually the people who manage the application on a day-to-day basis. Only admins can see and manage other admins.
 
-Even though they are the most powerful users of your application, you can still create some [policies](./policies.md#access-types) that will restrict the access even for them.
+Even though they are the most powerful users of your application, you can still create some [policies](./auth.md#access-types) that will restrict the access even for them.
 
-The [seed command](./entities.md#seed) will create an admin with the email `admin@manifest.build` and the password `admin`. You can create more admins from the admin panel.
+The [seed command](./entities.md#collections) will create an admin with the email `admin@manifest.build` and the password `admin`. You can create more admins from the admin panel.
 
 :::tip
 
@@ -100,7 +100,7 @@ Log in your credentials as an **admin** or an **authenticable entity**.
 
 ### Sign up
 
-Any authenticable entity allows new users to sign up if the [policies](./policies.md) permit it.
+Any authenticable entity allows new users to sign up if the [policies](./auth.md#api-policies) permit it.
 
 <Tabs>
 
@@ -158,7 +158,7 @@ Get the current logged-in user.
     Content-Type: application/json
     Authorization: Bearer your-token-here
     ```
-    
+
     ```json title="Example HTTP Response"
     {
       id: 1,

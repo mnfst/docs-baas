@@ -26,9 +26,9 @@ entities:
 ```
 
 :::tip Tip
-**Type validation** is natively implemented with [property types](./properties.md#property-types). You do not need to set it.
+**Type validation** is natively implemented with [property types](./entities.md#property-types). You do not need to set it.
 
-Ex: sending a _string_ value for a [boolean](./properties.md#boolean) property type will throw an error.
+Ex: sending a _string_ value for a [boolean](./entities.md#boolean) property type will throw an error.
 :::
 
 ## Inline syntax

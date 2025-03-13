@@ -32,7 +32,7 @@ module.exports = async (req, res) => {
 }
 ```
 
-Manifest handlers are basically [ExpressJS middlewares](https://expressjs.com/en/guide/using-middleware.html) exposed with the [Manifest SDK](./javascript-sdk.md) to help you to work with your data.
+Manifest handlers are basically [ExpressJS middlewares](https://expressjs.com/en/guide/using-middleware.html) exposed with the [Manifest SDK](./crud.md#using-the-javascript-sdk) to help you to work with your data.
 
 Place the handler file in the `/manifest/handlers` folder. For example, if the handler is `helloWorld`, the file should be `helloWorld.js`.
 
@@ -46,13 +46,13 @@ You can choose to set a different folder for handlers adding the `MANIFEST_HANDL
 
 Each endpoint can be defined in the YAML file with the following values:
 
-| Option          | Default | Type         | Description                                                                                   |
-| --------------- | ------- | ------------ | --------------------------------------------------------------------------------------------- |
-| **path\***      | -       | string       | The path of your endpoint. Use the `:var` syntax for route params. Ex: `users/:id/upvote`     |
-| **method\***    | -       | _HttpMethod_ | The HTTP request method: "GET", "POST", "PATCH", "PUT" or "DELETE"                            |
-| **handler\***   | -       | string       | The name of the handler function triggered                                                    |
-| **policies\***  | `[]`    | _Policy[]_   | The [access policies](./policies.md#access-policies) that restrict the access of the endpoint |
-| **description** | -       | string       | Optional description for your endpoint                                                        |
+| Option          | Default | Type         | Description                                                                               |
+| --------------- | ------- | ------------ | ----------------------------------------------------------------------------------------- |
+| **path\***      | -       | string       | The path of your endpoint. Use the `:var` syntax for route params. Ex: `users/:id/upvote` |
+| **method\***    | -       | _HttpMethod_ | The HTTP request method: "GET", "POST", "PATCH", "PUT" or "DELETE"                        |
+| **handler\***   | -       | string       | The name of the handler function triggered                                                |
+| **policies\***  | `[]`    | _Policy[]_   | The [access policies](./auth.md#access-policies) that restrict the access of the endpoint |
+| **description** | -       | string       | Optional description for your endpoint                                                    |
 
 ## Manipulate data with the backend SDK
 
@@ -101,4 +101,4 @@ module.exports = async (req, res, manifest) => {
 
 The custom endpoint increases the score of a competitor. The path integrates an `id` route param that we can use as `req.params['id']` from our handler.
 
-Note the third argument in our function. This is the Manifest backend SDK that allow you to do CRUD operations in your app using the same syntax as the [JS SDK](./javascript-sdk.md#crud-operations).
+Note the third argument in our function. This is the Manifest backend SDK that allow you to do CRUD operations in your app using the same syntax as the [JS SDK](./crud.md#using-the-javascript-sdk).

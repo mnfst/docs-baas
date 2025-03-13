@@ -84,4 +84,4 @@ export default {
 
 ```
 
-Checkout the [SDK doc](javascript-sdk.md) to see more usages of the SDK.,
+Checkout the [SDK doc](./crud.md#using-the-javascript-sdk) to see more usages of the SDK.,

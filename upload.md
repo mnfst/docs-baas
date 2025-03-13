@@ -37,7 +37,7 @@ Changing the `BASE_URL` will not change the path of images and files that are al
 
 ## Upload a file
 
-A file should be related to an property with the [file property type](./properties.md#file).
+A file should be related to an property with the [file property type](./entities.md#file).
 
 <Tabs>
   <TabItem value="sdk" label="JS SDK" default>
@@ -85,9 +85,9 @@ A file should be related to an property with the [file property type](./properti
 
 ## Upload an image
 
-An image should be related to a property with the [image property type](./properties.md#image). Manifest accepts **PNG** and **JPG** images only.
+An image should be related to a property with the [image property type](./entities.md#image). Manifest accepts **PNG** and **JPG** images only.
 
-Each image uploaded will be optimized and resized into several sizes based on [the property parameters](properties#parameters-1). By default it generates a -thumbnail- of 80x80 and a _medium_ of 160x160
+Each image uploaded will be optimized and resized into several sizes based on [the property parameters](./entities.md#property-params). By default it generates a -thumbnail- of 80x80 and a _medium_ of 160x160
 
 <Tabs>
   <TabItem value="sdk" label="JS SDK" default>

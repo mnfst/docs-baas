@@ -50,7 +50,7 @@ You can add **several middlewares** for an event. They will be processed sequent
 
 ## Use your data with the Manifest backend SDK
 
-Manifest passes the [JS SDK](./javascript-sdk.md) to handler functions as third argument. You can use it to fetch or write data.
+Manifest passes the [JS SDK](./crud.md#using-the-javascript-sdk) to handler functions as third argument. You can use it to fetch or write data.
 
 ```js title="manifest/handlers/patchDocumentNameIfEmpty.js"
 module.exports = async (req, res, manifest) => {
