@@ -19,7 +19,7 @@ CRUD operations can be restricted using [access policies](./auth.md#access-polic
 
 Manifest exposes a REST API for CRUD operations. The **OpenAPI** documentation is automatically generated on http://localhost:1111/api. Have a look!
 
-For CRUD endpoints, this prefix is followed by `collections` for [collections entities](#collections) and `singles` for [single entities](#singles) and by the slug of your entity (you can change it in the [entity params](entities.md#collection-entity-params))
+For CRUD endpoints, this prefix is followed by `collections` for [collections entities](#collections) and `singles` for [single entities](#singles) and by the slug of your entity (you can change it in the [entity params](entities.md#entity-params))
 
 Examples:
 
@@ -290,7 +290,7 @@ This operation will create a new item and store it in the database. The newly cr
 
 This operation will replace an existing item by the payload provided in the request and returns the updated item.
 
-Unlike [partial updates](#update-an-item-partial-update), this operation will replace the whole item by the new one. Missing or empty properties will delete the previous ones.
+Unlike [partial updates](#patch-an-item), this operation will replace the whole item by the new one. Missing or empty properties will delete the previous ones.
 
 <Tabs>
 <TabItem value="rest" label="REST API" default>
@@ -343,7 +343,7 @@ Unlike [partial updates](#update-an-item-partial-update), this operation will re
 
 This operation will partially replace an existing item and return the updated item.
 
-Unlike [fully replacement](#update-an-item-fully-replace), this operation will only modify the properties provided in the payload an leave the other ones as they are.
+Unlike [fully replacement](#update-an-item), this operation will only modify the properties provided in the payload an leave the other ones as they are.
 <Tabs>
 <TabItem value="rest" label="REST API" default>
 **Request URL**: `PATCH /api/collections/:slug/:id`
@@ -460,7 +460,7 @@ GET /api/singles/homepage
 
 ### Update an item
 
-This operation will replace an existing item by the payload provided in the request. Unlike [partial updates](#update-a-single-item-partial-update), this operation will replace the whole item by the new one. Missing or empty properties will delete the previous ones.
+This operation will replace an existing item by the payload provided in the request. Unlike [partial updates](#patch-an-item-1), this operation will replace the whole item by the new one. Missing or empty properties will delete the previous ones.
 <Tabs>
 <TabItem value="rest" label="REST API" default>
 **Request URL**: `PUT /api/singles/:slug`
@@ -504,7 +504,7 @@ Body:
 
 ### Patch an item
 
-This operation will partially replace an existing item. Unlike [fully replacement](#update-a-single-item-fully-replace), this operation will only modify the properties provided in the payload an leave the other ones as they are.
+This operation will partially replace an existing item. Unlike [fully replacement](#update-an-item-1), this operation will only modify the properties provided in the payload an leave the other ones as they are.
 
 <Tabs>
 <TabItem value="rest" label="REST API" default>
