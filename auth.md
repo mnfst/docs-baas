@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 Authentication is the process of proving that people are who they say they are.
 
-Manifest uses **JSON Web Tokens (JWT)** to do that. When you log in, you basically create a new **token** that you use in your next requests to prove your identity. This allows us to use [Policies](./auth#access-policies) to grant or deny the access to some resources based on the user characteristics.
+Manifest uses **JSON Web Tokens (JWT)** to do that. When you log in, you basically create a new **token** that you use in your next requests to prove your identity. This allows us to use [Policies](./auth.md#api-policies) to grant or deny the access to some resources based on the user characteristics.
 
 :::info
 

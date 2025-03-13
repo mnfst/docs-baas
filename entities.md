@@ -34,9 +34,7 @@ entities:
 
 This file will generate the **Cat** and **Dog** entity both with a `name` property. You can now add your own pets through the admin panel!
 
-### Seed
-
-Dummy data is crucial for app development and testing. You can generate dummy data for all your entities with the simple command:
+You can generate dummy data for all your entities with the simple command:
 
 ```
 npm run manifest:seed
@@ -48,7 +46,7 @@ The seed replaces the previous data by the new one and thus should never be used
 
 :::
 
-### Collection entity params
+### Entity params
 
 You can pass different arguments to configure your entities. Example:
 
@@ -76,7 +74,7 @@ entities:
 
 ## Singles
 
-Single entities differ a bit from [collections](#collections). A single entity is **singular in nature**, and there can be only one record of them. Examples are website dynamic elements, pages, standalone content or settings. They do not have relations.
+Single entities differ a bit from [collections](#collections). A single entity is **singular in nature**, and there can be only one record of them. Examples are website dynamic elements, pages, standalone content or settings. They do not have [relations](./entities.md#relations).
 
 On single entities **Create** and **Delete** CRUD actions are disabled. Thus, the [REST API endpoints for single entities](./crud.md#singles) are different.
 
@@ -92,7 +90,13 @@ ContactPage:
     title: { required: true }
 ```
 
-### Single entity params
+You can generate dummy data for all your entities with the simple command:
+
+```
+npm run manifest:seed
+```
+
+### Entity params
 
 You can pass different arguments to configure your single entities. Example:
 
