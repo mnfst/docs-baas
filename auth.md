@@ -58,32 +58,19 @@ The passwords are automatically hashed using _SHA-3 algorithm_.
 Log in your credentials as an **admin** or an **authenticable entity**.
 
 <Tabs>
-  <TabItem value="sdk" label="JS SDK" default>
-    ```js
-    // Login as Admin.
-    await manifest.login('admins', 'admin@manifest.build', 'password')
 
-    // Login as User entity.
-    await manifest.login('users', 'user@example.com', 'password')
-
-    // Then all following requests will have the authorization token in their header until logout.
-    const example = await manifest.from('restricted-resource').find()
-    ```
-
-  </TabItem>
   <TabItem value="rest" label="REST API" default>
-    ```http
-    // Login as Admin.
+    ```http title="Example HTTP Request"
     POST /api/auth/admins/login
     Content-Type: application/json
     {
-        "email": "admin@manifest.build",
-        "password": "password"
+      "email": "admin@manifest.build",
+      "password": "password"
     }
-
-    // Response.
+    ```
+    ```json title="Example HTTP Response"
     {
-        "token": "12345"
+      "token": "12345"
     }
     ```
 
@@ -96,6 +83,19 @@ Log in your credentials as an **admin** or an **authenticable entity**.
     ```
 
   </TabItem>
+    <TabItem value="sdk" label="JS SDK" default>
+    ```js
+    // Login as Admin.
+    await manifest.login('admins', 'admin@manifest.build', 'password')
+
+    // Login as User entity.
+    await manifest.login('users', 'user@example.com', 'password')
+
+    // Then all following requests will have the authorization token in their header until logout.
+    const example = await manifest.from('restricted-resource').find()
+    ```
+
+  </TabItem>
 </Tabs>
 
 ### Sign up
@@ -103,27 +103,17 @@ Log in your credentials as an **admin** or an **authenticable entity**.
 Any authenticable entity allows new users to sign up if the [policies](./policies.md) permit it.
 
 <Tabs>
-  <TabItem value="sdk" label="JS SDK" default>
-    ```js
-    // Sign up as a new user.
-    await manifest.signup('users', 'user@example.com', 'password')
 
-    // Then all following requests will have the authorization token in its header until logout.
-    const example = await manifest.from('restricted-resource').find()
-    ```
-
-  </TabItem>
   <TabItem value="rest" label="REST API" default>
-    ```http
-    // Sign up as a new user.
+    ```http title="Example HTTP Request"
     POST /api/auth/users/signup
     Content-Type: application/json
     {
         "email": "user@example.com",
         "password": "password"
     }
-
-    // Response.
+    ```
+    ```json title="Example HTTP Response"
     {
         "token": "12345"
     }
@@ -135,6 +125,16 @@ Any authenticable entity allows new users to sign up if the [policies](./policie
     GET /api/dynamic/cats
     Content-Type: application/json
     Authorization: Bearer your-token-here
+    ```
+
+  </TabItem>
+    <TabItem value="sdk" label="JS SDK" default>
+    ```js
+    // Sign up as a new user.
+    await manifest.signup('users', 'user@example.com', 'password')
+
+    // Then all following requests will have the authorization token in its header until logout.
+    const example = await manifest.from('restricted-resource').find()
     ```
 
   </TabItem>
@@ -151,24 +151,26 @@ It is not possible to sign up as an **admin**. If you want to create more admins
 Get the current logged-in user.
 
 <Tabs>
-  <TabItem value="sdk" label="JS SDK" default>
-    ```js
-    // Get the current user (logged as Contributor entity).
-    const me = await manifest.from('contributors').me()
-    ```
 
-  </TabItem>
   <TabItem value="rest" label="REST API" default>
-    ```http
+    ```http title="Example HTTP Request"
     GET /api/auth/contributors/me
     Content-Type: application/json
     Authorization: Bearer your-token-here
-
-    // Response.
+    ```
+    
+    ```json title="Example HTTP Response"
     {
       id: 1,
       email: 'contributor@test.com'
     }
+    ```
+
+  </TabItem>
+    <TabItem value="sdk" label="JS SDK" default>
+    ```js
+    // Get the current user (logged as Contributor entity).
+    const me = await manifest.from('contributors').me()
     ```
 
   </TabItem>
@@ -179,15 +181,16 @@ Get the current logged-in user.
 Logout removes the token from future request headers.
 
 <Tabs>
-  <TabItem value="sdk" label="JS SDK" default>
+
+  <TabItem value="rest" label="REST API" default>
+    Reset the `Authorization` header as you usually do, and you are good to go!
+  </TabItem>
+    <TabItem value="sdk" label="JS SDK" default>
     ```js
     // All future calls will lose the "Authorization" header.
     await manifest.logout()
     ```
 
-  </TabItem>
-  <TabItem value="rest" label="REST API" default>
-    Reset the `Authorization` header as you usually do, and you are good to go!
   </TabItem>
 </Tabs>
 

@@ -201,32 +201,6 @@ const cats = await manifest.from('cats').orderBy('age', { desc: true }).find()
   </TabItem>
 </Tabs>
 
-#### Relations
-
-##### Load relations
-
-You can specify the relations you want to load. [Eager relationships](relations.md#relation-params) are loaded by default.
-
-```http
-// Loads cats and their owners.
-GET http://localhost:1111/api/collections/cats?relations=owner
-
-// Coma-separated relations.
-GET http://localhost:1111/api/collections/invoices?relation=project,customer
-
-// Nested relations.
-GET http://localhost:111/api/collections/city?relations=region,region.country
-```
-
-##### Filter by relations
-
-Once the relation is loaded, you can also filter by its properties using the same filters suffixes:
-
-```http
-GET http://localhost:1111/api/collections/cats?relations=owner&owner.id_eq=1
-GET http://localhost:1111/api/collections/cats?relations=owner&owner.name_eq=Jorge
-```
-
 ### Get a single item
 
 This operation will fetch a single item based on its ID.

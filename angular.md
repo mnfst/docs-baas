@@ -8,7 +8,7 @@ Give a proper backend to your Angular app.
 
 :::warning
 
-This quick start guide focuses exclusively on the **frontend**. To ensure the functionality of this code, your Manifest backend must be [up and running](install.md) at `http://localhost:1111`.
+This quick start guide focuses exclusively on the **frontend**. To ensure the functionality of this code, your Manifest backend must be [up and running](./introduction.md#install-manifest) at `http://localhost:1111`.
 
 :::
 
@@ -67,4 +67,4 @@ And in the template:
 </ul>
 ```
 
-Checkout the [SDK doc](javascript-sdk.md) to see more usages of the SDK: CRUD operations, file upload, authentication,
+Checkout the [SDK doc](./crud.md#using-the-javascript-sdk) to see more usages of the SDK: CRUD operations, file upload, authentication,
