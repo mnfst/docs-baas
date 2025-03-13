@@ -7,6 +7,8 @@ import TabItem from '@theme/TabItem';
 
 # Configuration
 
+## Introduction
+
 Manifest embraces the **convention over configuration** concept: it assumes several logical situations by default without showing you the setting to keep things as simple as possible.
 
 Nevertheless there is still the possibility to adapt your Manifest app to your needs, especially through the `.env` file. Here are the list of available environment variables:

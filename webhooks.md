@@ -4,6 +4,8 @@ id: webhooks
 
 # Webhooks
 
+## Introduction
+
 **Webhooks** are a way for an app to send automated real-time notifications to another app when a specific [event](./webhooks.md#hook-events) occurs. In Manifest, there are 8 predefined events where you can hook HTTP requests.
 
 Webhooks are useful to connect other applications or to trigger a micro-service like notifying someone or update a file.

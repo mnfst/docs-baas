@@ -3,9 +3,11 @@ id: middlewares
 title: Middlewares
 ---
 
-**Middleware functions** are intermediary functions that sit between the client's request and the server's response. They have access to the request object (req) and the response object (res).
+## Introduction
 
-As Manifest works with **ExpressJS**, Manifest middlewares are [ExpressJS middlewares](https://expressjs.com/en/guide/using-middleware.html) enhanced with [Manifest SDK](./javascript-sdk.md) attached to let you interact with your data with ease.
+**Middleware functions** or **middlewares** are intermediary functions that sit between the client's request and the server's response. They have access to the request object (req) and the response object (res).
+
+As Manifest works with **ExpressJS**, Manifest middlewares are [ExpressJS middlewares](https://expressjs.com/en/guide/using-middleware.html) enhanced with the [Manifest SDK](./crud.md#using-the-javascript-sdk) attached to let you interact with your data with ease.
 
 ## Middleware use cases
 

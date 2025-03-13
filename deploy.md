@@ -4,6 +4,8 @@ id: deploy
 
 # Deploy Manifest
 
+## Introduction
+
 Manifest is made to be **self-hosted**: backends can be deployed with ease wherever you want using different methods.
 
 We recommend using [Docker](#docker) to simplify deployments but you also can install Manifest manually on a VM or on a bare-metal server.

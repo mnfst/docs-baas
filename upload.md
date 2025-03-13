@@ -5,7 +5,9 @@ id: upload
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# File and Image upload
+# Uploads
+
+## Introduction
 
 Manifest comes with a **built-in storage system** to upload assets locally (default) or in a [S3 bucket](./s3-storage). You can use [file upload](#upload-a-file) to let your users update any kind of file, or [image upload](#upload-an-image) for image resizing.
 

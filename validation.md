@@ -4,6 +4,8 @@ id: validation
 
 # Validation
 
+## Introduction
+
 Implementing **server-side validation** is very easy with Manifest.
 
 You can use the built-in **custom validators** to ensure that the data you are receiving is correctly formatted.
@@ -44,7 +46,7 @@ entities:
 
 Both syntaxes (block and inline) can be used simultaneously. In case of declaration conflict, the **inline** declaration will prevail.
 
-## Optional values validation
+## Validate optional properties
 
 If you have some values that are optional **but** that need to be validated **if present**, you can add the `isOptional` validator. The value will be compared against validators only if not _undefined_ or _null_. Example:
 
@@ -60,7 +62,7 @@ entities:
         } #  If provided, the email should contain "@company.com"
 ```
 
-## Response
+## Validation response
 
 If the validation fails, the response will list the validation error(s) in its body:
 

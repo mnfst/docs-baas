@@ -1,41 +1,65 @@
 ---
-id: introduction
-title: Introduction
+id: get-started
+title: Get started
 slug: /
 ---
 
-# Welcome to Manifest Documentation 👋
+# Manifest Documentation 👋
 
-Manifest is the simplest **Micro-backend** you will find: It provides a complete backend to your client app without the hassle that comes with it.
+## Introduction
 
-It actually fits into **a single YAML file** that generates a complete backend. Here is an example of a complete Manifest app:
+Manifest is a lightweight **Backend-as-a-Service** (BaaS) that fits into a single YAML file.
 
-```yaml title="manifest/backend.yml"
-name: Healthcare application
-
-entities:
-  Doctor 👩🏾‍⚕️:
-    properties:
-      - fullName
-      - avatar
-      - { name: price, type: money, options: { currency: EUR } }
-    belongsTo:
-      - City
-
-  Patient 🤒:
-    properties:
-      - fullName
-      - { name: birthdate, type: date }
-    belongsTo:
-      - Doctor
-
-  City 🌍:
-    properties:
-      - name
-```
-
-## Key features
+Key advantages:
 
 - ⚡ Develop 10x faster comparing to traditional approaches
-- 😎 Super-easy syntax easy to read and version control
-- 🕊️ Self-hosted free open source software
+- 😎 Easy to read and version control for humans and AIs
+- 🕊️ Self-hosted Free Open Source software
+
+## Install Manifest
+
+Follow the steps below to install Manifest in your local machine.
+
+### Prerequisites
+
+- [NodeJS](https://nodejs.org/en/) (**20.x** or superior).
+
+### Installation steps
+
+Run the following on your terminal from the **root of your project**:
+
+```bash
+npx add-manifest@latest
+```
+
+This will create a `manifest/backend.yml` file and add the required dependencies.
+
+Then, serve the backend locally:
+
+```
+npm run manifest
+```
+
+You can now:
+<br/> - See your **Admin panel** at http://localhost:1111 using the email `admin@manifest.build` and the password `admin`
+<br/> - Use your **REST API** at http://localhost:1111/api
+
+:::tip
+
+If you already have a frontend app, you can run the `npx add-manifest` command from your **project root** to include it in your repo.
+
+:::
+
+#### Note with PNMP
+
+As [PNPM](https://pnpm.io/fr/) blocks postinstall scripts, we have to adapt the `þackage.json`. Add this to your `package.json` file before doing `pnpm install`:
+
+```json
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@nestjs/core",
+      "sharp",
+      "sqlite3"
+    ]
+  }
+```

@@ -1,5 +1,7 @@
 # S3 Storage
 
+## Introduction
+
 Manifest supports **S3 storage** to manage assets. To use it, ensure you have:
 
 - A **storage bucket** (or equivalent).
