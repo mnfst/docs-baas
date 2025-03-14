@@ -343,7 +343,7 @@ Unlike [partial updates](#patch-an-item), this operation will replace the whole 
 
 This operation will partially replace an existing item and return the updated item.
 
-Unlike [fully replacement](#update-an-item), this operation will only modify the properties provided in the payload an leave the other ones as they are.
+Unlike [fully replacement](#update-an-item), this operation will only modify the properties provided in the payload and leave the other ones as they are.
 <Tabs>
 <TabItem value="rest" label="REST API" default>
 **Request URL**: `PATCH /api/collections/:slug/:id`
