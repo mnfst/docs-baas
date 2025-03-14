@@ -492,7 +492,7 @@ Body:
        description: 'My new description'
    })
 
-    console.log(user);
+    console.log(newHomepage);
     // Output: {
     //  title: "My new title",
     //  description: "My new description"
