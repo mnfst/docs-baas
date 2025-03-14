@@ -112,7 +112,7 @@ You can filter by [property](./entities.md#properties) to refine the list of ite
 
 **Pagination**
 
-All list requests are paginated by default. Just use the `page` parameter to chose your page and the `perPage` param if you want to change the number of items per page.
+All list requests are paginated by default. Just use the `page` parameter to choose your page and the `perPage` param if you want to change the number of items per page.
 
 | Param       | Description                      | Example      |
 | ----------- | -------------------------------- | ------------ |
