@@ -11,7 +11,7 @@ import TabItem from '@theme/TabItem';
 
 Manifest comes with a **built-in storage system** to upload assets locally (default) or in a [S3 bucket](./s3-storage). You can use [file upload](#upload-a-file) to let your users update any kind of file, or [image upload](#upload-an-image) for image resizing.
 
-A `public/storage` folder is automatically created when needed. Uploaded files and images will be renamed with a unique name and stored in a specific folder based on entity and property name, ending by a folder with the current month name to prevent having to many files in a single folder.
+A `public/storage` folder is automatically created when needed. Uploaded files and images will be renamed with a unique name and stored in a specific folder based on entity and property name, ending by a folder with the current month name to prevent having too many files in a single folder.
 
 Example: _public/storage/project/contract/Nov24/8dab3936m1p54a66-contract.pdf_
 
@@ -37,7 +37,7 @@ Changing the `BASE_URL` will not change the path of images and files that are al
 
 ## Upload a file
 
-A file should be related to an property with the [file property type](./entities.md#file).
+A file should be related to a property with the [file property type](./entities.md#file).
 
 <Tabs>
   <TabItem value="sdk" label="JS SDK" default>
@@ -85,9 +85,9 @@ A file should be related to an property with the [file property type](./entities
 
 ## Upload an image
 
-An image should be related to a property with the [image property type](./entities.md#image). Manifest accepts **PNG** and **JPG** images only.
+An image should be related to a property with the [image property type](./entities.md#image). Manifest accepts **.PNG** and **.JPG** images only.
 
-Each image uploaded will be optimized and resized into several sizes based on [the property parameters](./entities.md#property-params). By default it generates a -thumbnail- of 80x80 and a _medium_ of 160x160
+Each image uploaded will be optimized and resized into several sizes based on [the property parameters](./entities.md#property-params). By default it generates a _thumbnail_ of 80x80 and a _medium_ of 160x160
 
 <Tabs>
   <TabItem value="sdk" label="JS SDK" default>
@@ -107,7 +107,7 @@ Each image uploaded will be optimized and resized into several sizes based on [t
     // }
 
     // Then you can store the path in the database.
-    const cat = await manifest.from('invoices').create({
+    const cat = await manifest.from('cats').create({
       name: 'Felix',
       image: image
     })
