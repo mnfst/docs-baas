@@ -445,7 +445,7 @@ GET /api/singles/homepage
  </TabItem>
  <TabItem value="sdk" label="JS SDK" default>
    ```js title="Example SDK usage"
-    // Delete the cat with ID 60.
+    // Get the homepage entity.
     const homepage = await manifest.single('homepage').get()
 
     console.log(homepage);
