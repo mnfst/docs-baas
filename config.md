@@ -11,18 +11,18 @@ import TabItem from '@theme/TabItem';
 
 Manifest embraces the **convention over configuration** concept: it assumes several logical situations by default without showing you the setting to keep things as simple as possible.
 
-Nevertheless there is still the possibility to adapt your Manifest app to your needs, especially through the `.env` file. Here are the list of available environment variables:
+Nevertheless there is still the possibility to adapt your Manifest app to your needs, especially through the `.env` file. Here is the list of available environment variables:
 
 ## General variables
 
 General environment variables.
 
-| Variable      | Default                             | Description                                                                                                                                  |
-| ------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| NODE_ENV      | `development`                       | The app environment. For production and staging instances, it should be set to `production`, mostly to turn off live reload on file change.  |
-| PORT          | `1111`                              | The port of your app. You can either adapt your server settings to listen to `1111` or change here to your server's default (usually `3000`) |
-| BASE_URL      | `http://localhost:$PORT`            | The base url of your backend. Change it when deploying if you use [file or image upload](./upload.md)                                        |
-| OPEN_API_DOCS | `true` unless `NODE_ENV=production` | Shows or not the OpenAPI doc (formerly Swagger) for your REST API at `/api`. Make sure to set to `true` if you want to display on production |
+| Variable      | Default                             | Description                                                                                                                                                 |
+| ------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| NODE_ENV      | `development`                       | The app environment. For production and staging instances, it should be set to `production`, mostly to turn off live reload on file change.                 |
+| PORT          | `1111`                              | The port of your app. You can either adapt your server settings to listen to `1111` or change here to your server's default (usually `3000`)                |
+| BASE_URL      | `http://localhost:$PORT`            | The base url of your backend. Change it when deploying if you use [file or image upload](./upload.md)                                                       |
+| OPEN_API_DOCS | `true` unless `NODE_ENV=production` | Determines whether the OpenAPI doc is shown (formerly Swagger) for your REST API at `/api`. Make sure to set to `true` if you want to display on production |
 
 ## Paths
 
@@ -39,7 +39,7 @@ Environment variables related to paths.
 
 By default Manifest runs with [SQLite](https://www.sqlite.org/) to enable instant launch with the `npx add-manifest@latest` command.
 
-We recommend to switch to [PostgreSQL](https://www.postgresql.org/) or [MySQL](https://www.mysql.com/) or its alternative [MariaDB](https://mariadb.org/) on production for more robustness and to choose from a large number of managed database providers.
+We recommend switching to [PostgreSQL](https://www.postgresql.org/) or [MySQL](https://www.mysql.com/) or its alternative [MariaDB](https://mariadb.org/) on production for more robustness and to choose from a large number of managed database providers.
 
 | Variable      | Default                | Description                                                               | Applies To         |
 | ------------- | ---------------------- | ------------------------------------------------------------------------- | ------------------ |
