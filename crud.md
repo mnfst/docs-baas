@@ -573,7 +573,7 @@ You can specify which relations you want to load with your entities in your quer
     ```http
 
     // Fetch entities with 2 relations.
-    GET http://localhost:111/api/dynamic/city?relations=region,mayor
+    GET http://localhost:1111/api/dynamic/city?relations=region,mayor
 
     // Fetch nested relations.
     GET http://localhost:111/api/dynamic/city?relations=region,region.country,region.country.planet
