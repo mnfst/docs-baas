@@ -170,16 +170,16 @@ const cats = await manifest
 
 **Filter operators**
 
-| Operator | Description           | Example                           |
-| -------- | --------------------- | --------------------------------- |
-| **=**    | equals                | `.where('isActive = true')`       |
-| **!=**   | not equals            | `.where('name != alice)`          |
-| **>**    | greater than          | `.where('birthdate > 2020-01-01)` |
-| **>=**   | greater than or equal | `.where('age >= 4)`               |
-| **\<**   | less than             | `.where('amount < 400)`           |
-| **\<=**  | less than or equal    | `.where('amount <= 400)`          |
-| **like** | like                  | `.where('name_like=%bi%')`        |
-| **in**   | included in           | `.where('customer_in=1,2,3')`     |
+| Operator | Description           | Example                            |
+| -------- | --------------------- | ---------------------------------- |
+| **=**    | equals                | `.where('isActive = true')`        |
+| **!=**   | not equals            | `.where('name != alice')`          |
+| **>**    | greater than          | `.where('birthdate > 2020-01-01')` |
+| **>=**   | greater than or equal | `.where('age >= 4')`               |
+| **\<**   | less than             | `.where('amount < 400')`           |
+| **\<=**  | less than or equal    | `.where('amount <= 400')`          |
+| **like** | like                  | `.where('name_like=%bi%')`         |
+| **in**   | included in           | `.where('customer_in=1,2,3')`      |
 
 **Pagination**
 
