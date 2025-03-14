@@ -6,9 +6,9 @@ id: webhooks
 
 ## Introduction
 
-**Webhooks** are a way for an app to send automated real-time notifications to another app when a specific [event](./webhooks.md#hook-events) occurs. In Manifest, there are 8 predefined events where you can hook HTTP requests.
+**Webhooks** are a way for an app to send automated real-time notifications to another app when a specific [event](./webhooks.md#hook-events) occurs. In Manifest, there are 6 predefined events where you can hook HTTP requests.
 
-Webhooks are useful to connect other applications or to trigger a micro-service like notifying someone or update a file.
+Webhooks are useful to connect other applications or to trigger a micro-service like notifying someone or updating a file.
 
 ## Syntax
 
@@ -46,7 +46,7 @@ You can pass arguments using the long syntax:
 | **method**  | `POST`  | _HTTP Method_ | The HTTP method of the request                                                         |
 | **headers** | `{}`    | object        | Optional headers of the request. Use `${MY_DOTENV_VAR}` syntax to use dotenv variables |
 
-Available HTTP Methods are `GET`, `POST`, `PUT`, `PATCH` and `DELETE`.
+Available HTTP Methods are `GET`, `POST`, `PUT`, `PATCH`, and `DELETE`.
 
 :::note
 
@@ -76,7 +76,7 @@ This is the structure of the body:
 
 ## Hook events
 
-This is the list and description of the 6 hook events available. All of them are related to an [entity](./entities.md)
+This is the list and description of the 6 hook events available. All of them are related to an [entity](./entities.md).
 
 | Name             | Description              |
 | ---------------- | ------------------------ |

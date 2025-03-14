@@ -9,7 +9,7 @@ title: Endpoints
 
 A custom endpoint is a user-defined API route that executes specific logic on the backend. Unlike built-in routes, custom endpoints allow you to control how data is processed, retrieved, or modified in response to client requests.
 
-For example,you can define an endpoint like `/competitors/:id/increase` that directly increments the score of a given competitor.
+For example, you can define an endpoint like `/competitors/:id/increase` that directly increments the score of a given competitor.
 
 Custom endpoints in Manifest follow a simple structure where you define:
 
@@ -28,11 +28,11 @@ endpoints:
 
 ```js title="manifest/handlers/helloWorld.js"
 module.exports = async (req, res) => {
-  res.json({ message: 'Hello world from my new endpoint !' })
+  res.json({ message: 'Hello world from my new endpoint!' })
 }
 ```
 
-Manifest handlers are basically [ExpressJS middlewares](https://expressjs.com/en/guide/using-middleware.html) exposed with the [Manifest SDK](./crud.md#using-the-javascript-sdk) to help you to work with your data.
+Manifest handlers are basically [ExpressJS middlewares](https://expressjs.com/en/guide/using-middleware.html) exposed with the [Manifest SDK](./crud.md#using-the-javascript-sdk) to help you work with your data.
 
 Place the handler file in the `/manifest/handlers` folder. For example, if the handler is `helloWorld`, the file should be `helloWorld.js`.
 
