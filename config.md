@@ -43,7 +43,7 @@ We recommend switching to [PostgreSQL](https://www.postgresql.org/) or [MySQL](h
 
 | Variable      | Default                | Description                                                               | Applies To         |
 | ------------- | ---------------------- | ------------------------------------------------------------------------- | ------------------ |
-| DB_CONNECTION | `sqlite`               | Choose `postgres` to switch to PostgreSQL or `mysql` for MySQL or MariaDB | All                |
+| DB_CONNECTION | `sqlite`               | Choose `postgres` switching to PostgreSQL or `mysql` for MySQL or MariaDB | All                |
 | DB_PATH       | `/manifest/backend.db` | Path of the database. Your server should have access to this path locally | SQLite             |
 | DB_HOST       | `localhost`            | Database host                                                             | PostgreSQL / MySQL |
 | DB_PORT       | `5432`                 | Database port                                                             | PostgreSQL / MySQL |

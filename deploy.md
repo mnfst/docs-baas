@@ -12,7 +12,7 @@ We recommend using [Docker](#docker) to simplify deployments but you also can in
 
 ## System requirements
 
-The minimum system requirements to run a small Manifest backend are **1vCPU** and **512 MB RAM**. It usually corresponds to one of the cheapest option on cloud providers.
+The minimum system requirements to run a small Manifest backend are **1vCPU** and **512 MB RAM**. It usually corresponds to one of the cheapest options on cloud providers.
 
 The server needs at least [Node.js v18 or more](https://nodejs.org/fr) and a process manager like [pm2](https://github.com/Unitech/pm2/).
 
@@ -20,7 +20,7 @@ The server needs at least [Node.js v18 or more](https://nodejs.org/fr) and a pro
 
 Manifest works by default in local with SQLite but we recommend to [switch to PostgreSQL](./config.md#database) for production deployments.
 
-All popular hosting providers have their managed PostgreSQL solutions and there is many DB-as-a-Service providers like [Neon](https://neon.tech/) that offer generous free-tier to get started. Here is a list of popular services:
+All popular hosting providers have their managed PostgreSQL solutions and there are many DB-as-a-Service providers like [Neon](https://neon.tech/) that offer generous free-tier to get started. Here is a list of popular services:
 
 | Provider            | Service Name                                                                                          |
 | ------------------- | ----------------------------------------------------------------------------------------------------- |
@@ -80,7 +80,7 @@ After that you will be able to run Manifest for production with `npm run start`.
 
 ## Docker
 
-[Docker](https://www.docker.com/) is a popular choice among developers. It uses containerization to ensure that the app will work well whatever the environment.
+[Docker](https://www.docker.com/) is a popular choice among developers. It uses containerization to ensure that the app will work well in any environment.
 
 ```dockerfile title="Dockerfile"
 # Use the official Node.js image as a base
