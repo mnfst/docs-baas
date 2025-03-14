@@ -622,17 +622,7 @@ Once the relation is loaded, you can also filter items by their relation id or p
 To store or update an item with its relations, you have to pass the relation id(s) as a property that end with **Id** for many-to-one and **Ids** for many-to-many like `companyId` or `tagIds`
 
 <Tabs>
-  <TabItem value="sdk" label="JS SDK" default>
-    ```js
-      // Store a new player with relations Team and Skill.
-      const newPlayer = await manifest.from('players').create({
-        name: 'Mike',
-        teamId: 10,
-        skillIds: [1,2,3,4,5]
-      })
-    ```
 
-  </TabItem>
   <TabItem value="rest" label="REST API" default>
     ```http
     // Store a new player with relations Team and Skill.
@@ -643,6 +633,17 @@ To store or update an item with its relations, you have to pass the relation id(
         "teamId": 10,
         "skillIds": [1,2,3,4,5]
     }
+    ```
+
+  </TabItem>
+    <TabItem value="sdk" label="JS SDK" default>
+    ```js
+      // Store a new player with relations Team and Skill.
+      const newPlayer = await manifest.from('players').create({
+        name: 'Mike',
+        teamId: 10,
+        skillIds: [1,2,3,4,5]
+      })
     ```
 
   </TabItem>
@@ -659,20 +660,6 @@ When storing **many-to-many** relations, you always need to **pass an array**, e
 As for updating properties, you can either do a **full replacement** using the update function (PUT) or a **partial replacement** using the patch function (PATCH).
 
 <Tabs>
-  <TabItem value="sdk" label="JS SDK" default>
-    ```js
-      // Replaces the whole skill relations by the new skillIds array.
-      await manifest.from('players').update(1, {
-        name: 'Mike',
-        teamId: 10,
-        skillIds: [10, 11]
-      })
-
-      // Updates the team without changing the skills or the name.
-      await manifest.from('players').patch(1, {teamId: 5})
-    ```
-
-  </TabItem>
   <TabItem value="rest" label="REST API" default>
     ```http
     // Replaces the whole skill relations by the new skillIds array.
@@ -693,4 +680,19 @@ As for updating properties, you can either do a **full replacement** using the u
     ```
 
   </TabItem>
+  <TabItem value="sdk" label="JS SDK" default>
+    ```js
+      // Replaces the whole skill relations by the new skillIds array.
+      await manifest.from('players').update(1, {
+        name: 'Mike',
+        teamId: 10,
+        skillIds: [10, 11]
+      })
+
+      // Updates the team without changing the skills or the name.
+      await manifest.from('players').patch(1, {teamId: 5})
+    ```
+
+  </TabItem>
+
 </Tabs>
