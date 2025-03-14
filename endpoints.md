@@ -87,7 +87,7 @@ module.exports = async (req, res, manifest) => {
     .findOneById(req.params['id'])
 
   // Add 1 to the competitor score.
-  const newScore = score + 1
+  const newScore = competitor.score + 1
 
   // Patch the record (changing only specified prop "score").
   await manifest.from('competitors').patch(competitor.id, {
