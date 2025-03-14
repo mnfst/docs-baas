@@ -23,7 +23,10 @@ This is an example of a simple endpoint that returns a "Hello world from my new 
 
 ```yaml title="manifest/backend.yml"
 endpoints:
-  helloWorld: { path: /hello-world, method: GET, handler: helloWorld }
+  helloWorld:
+    path: /hello-world
+    method: GET
+    handler: helloWorld
 ```
 
 ```js title="manifest/handlers/helloWorld.js"
