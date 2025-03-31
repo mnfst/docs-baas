@@ -49,7 +49,7 @@ entities:
 
 Authenticable entities have 2 extra properties that are used as credentials to log in: `email` and `password`. You do not need to specify them.
 
-The passwords are automatically hashed using _SHA-3 algorithm_.
+The passwords are automatically hashed using _bcryt_ with 10 salt rounds.
 
 ## Syntax
 
