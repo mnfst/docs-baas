@@ -32,9 +32,11 @@ entities:
       - name
 ```
 
-This file will generate the **Cat** and **Dog** entity both with a `name` property. You can now add your own pets through the admin panel!
+This file will generate the **Cat** and **Dog** entity both with a `name` property. In Manifest by default all entities have an incremental **id** so you do not need to add it. They also have automatic **createdAt** and **updatedAt** columns that are not selected by default in the API requests.
 
-You can generate dummy data for all your entities with the simple command:
+You can now add your own pets through the admin panel!
+
+To generate dummy data for all your entities, run the simple command:
 
 ```
 npm run manifest:seed
