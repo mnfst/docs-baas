@@ -125,7 +125,7 @@ Here are some quick guides to launch your app in a few minutes:
     <span>➡️</span>
   </a>
   
-  <a href="./deploy-heroku" class="card">
+  <a href="https://manifest.build/integrations/heroku" class="card">
     <p>Deploy Manifest on Heroku</p>
     <span>➡️</span>
   </a>
