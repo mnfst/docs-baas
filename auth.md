@@ -231,11 +231,7 @@ entities:
 
 In this case, everyone can see the **Invoice** items, only logged-in **Users** can create new ones. Updating an Invoice is restricted to [Admins](./auth.md#admins) only and no one can delete them (not even Admins).
 
-:::warning
-If **no policy** is specified for a rule, **the access is public** for the related action, thus anyone can manage records.
-
-The only exception is the **update** of [single entities](./entities.md#singles) that is set to `admin` by default for convenience.
-:::
+By default, all rules access are set to **admin** and thus only visible by logged-in **Admins**.
 
 | Prop       | Description                                                               | Type               |
 | ---------- | ------------------------------------------------------------------------- | ------------------ |
