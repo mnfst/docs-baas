@@ -104,7 +104,7 @@ Here are examples of `.env` files for different database connections:
 
 The backend fits in an [NPM Package](https://www.npmjs.com/package/manifest) that you can add to your dependencies simply by running `npm install manifest`. By default, Manifest uses [SQLite](https://www.sqlite.org/), the n°1 file-based database. This means it’s portable and doesn’t require any kind of server to run.
 
-If you plan run Manifest on a **mounted drive** like most cloud editors do, add the `--mountedDrive` argument to the run command to prevent [watcher errors](https://github.com/remy/nodemon?tab=readme-ov-file#application-isnt-restarting):
+If you plan to run Manifest on a **mounted drive** like most cloud editors do, add the `--mountedDrive` argument to the run command to prevent [watcher errors](https://github.com/remy/nodemon?tab=readme-ov-file#application-isnt-restarting):
 
 ```
 npm run manifest -- --mountedDrive
