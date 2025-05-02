@@ -24,14 +24,14 @@ All popular hosting providers have their managed PostgreSQL solutions and there 
 
 | Provider            | Service Name                                                                                          |
 | ------------------- | ----------------------------------------------------------------------------------------------------- |
-| **Amazon**          | [Amazon Aurora PostgreSQL](https://aws.amazon.com/rds/aurora/postgresql-features/)                    |
+| **Amazon**          | [Amazon Aurora PostgreSQL](https://aws.amazon.com/rds/aurora/features/)                               |
 | **Google Cloud**    | [Cloud SQL for PostgreSQL](https://cloud.google.com/sql/docs/postgres)                                |
 | **Microsoft Azure** | [Azure Database for PostgreSQL](https://azure.microsoft.com/en-us/products/postgresql/)               |
 | **Neon**            | [Neon Database](https://neon.tech/)                                                                   |
 | **Crunchy Data**    | [Crunchy Bridge](https://www.crunchydata.com/products/crunchy-bridge)                                 |
 | **Aiven**           | [Aiven for PostgreSQL](https://aiven.io/postgresql)                                                   |
 | **DigitalOcean**    | [DigitalOcean Managed PostgreSQL](https://www.digitalocean.com/products/managed-databases-postgresql) |
-| **Heroku**          | [Heroku Postgres](https://www.heroku.com/postgres)                                                    |
+| **Heroku**          | [Heroku Postgres](https://heroku.com/postgres)                                                        |
 | **StackGres**       | [StackGres](https://stackgres.io/)                                                                    |
 | **Render.com**      | [Render PostgreSQL Database](https://render.com/docs/postgresql-creating-connecting)                  |
 
@@ -114,12 +114,7 @@ Here are some quick guides to launch your app in a few minutes:
     <p>Deploy Manifest on DigitalOcean App Platform</p>
     <span>➡️</span>
   </a>
-  
-  <a href="./deploy-fly-io" class="card">
-    <p>Deploy Manifest on Fly.io</p>
-    <span>➡️</span>
-  </a>
-  
+    
   <a href="https://manifest.build/integrations/render" class="card">
     <p>Deploy Manifest on Render.com</p>
     <span>➡️</span>
