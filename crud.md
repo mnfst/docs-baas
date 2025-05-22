@@ -5,7 +5,7 @@ id: crud
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# CRUD Operations
+# CRUD operations
 
 ## Introduction
 
@@ -13,7 +13,11 @@ Once you created your [entities](./entities.md), you probably want to interact w
 
 Manifest provides out-of-the-box CRUD endpoints through the **REST API** or the **JS SDK**.
 
-CRUD operations can be restricted using [access policies](./auth.md#access-policies).
+:::info
+
+By default CRUD endpoints are private, only accessible for logged-in **admin** users. You can open them to the public using [policies](./access-policies.md).
+
+:::
 
 ## Using the REST API
 
@@ -36,7 +40,7 @@ In addition to **CRUD endpoints** that are generated automatically, you also can
 
 The **Manifest JS SDK** is used to fetch and manipulate your data from your JS client using an elegant and human-friendly interface.
 
-The SDK can be integrated in any frontend stack app like [React](./react.md), [Vue](./vue.md), [Svelte](./svelte.md).... Or even by another server using NodeJS!
+The SDK can be integrated in any frontend stack app like [React](./react.md), [Vue](./vue.md), [Svelte](./svelte.md), [Astro](./astro.md), [Angular](./angular.md).... Or even by another server using NodeJS!
 
 Install it via the terminal:
 
