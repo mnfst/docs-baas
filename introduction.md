@@ -8,13 +8,18 @@ slug: /
 
 ## Introduction
 
-Manifest is a lightweight **Backend-as-a-Service** (BaaS) that fits into a single YAML file.
+Manifest is a **backend** designed for developers using **AI coding tools** like [Cursor](https://www.cursor.com/), [Copilot](https://github.com/features/copilot) or [Windsurf](https://windsurf.com/).
+
+If you’ve been using AI tools to build your app or website, you already know the truth: Generating a frontend is easy, but building the backend is still a mess.
+
+With **Manifest**, you define your entire backend in a single YAML file. It can be generated and edited by both humans and LLMs.
 
 Key advantages:
 
-- ⚡ Develop 10x faster comparing to traditional approaches
-- 😎 Easy to read and version control for humans and AIs
-- 🕊️ Self-hosted Free Open Source software
+- 🤖 Fits naturally into AI-assisted coding
+- 🔒 Easy to edit, validate and version.
+- 🗄️ Data, logic, storage, essentials features and an admin panel
+- 🧠 Reduce LLM token usage by up to 90%
 
 ## Install Manifest
 
