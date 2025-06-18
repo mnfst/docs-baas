@@ -26,17 +26,27 @@ Follow the steps below to install Manifest in your local machine.
 
 ### Installation steps
 
-Run the following on your terminal from the **root of your project**:
+Run this command to create a Manifest project ready to use with Cursor IDE.
 
 ```bash
-npx add-manifest@latest
+yarn create manifest my-project --cursor
 ```
 
-This will create a `manifest/backend.yml` file and add the required dependencies.
+This will create a `my-project` folder with a Manifest backend configured for Cursor.
 
-Then, serve the backend locally:
+You can replace `--cursor` with another option if you're using a different AI tool;
+
+- `--copilot` if you're using **GitHub Copilot**
+- `--windsurf` for **Windsurf**
+- or remove it entirely if you're not using any AI coding tool
+
+> Note
+> You can also use `npm create` instead of `yarn create`.
+
+To start the Manifest backend, run the following command in the new project folder:
 
 ```
+cd my-project
 npm run manifest
 ```
 
