@@ -28,12 +28,12 @@ General environment variables.
 
 Environment variables related to paths.
 
-| Variable                 | Default                 | Description                                                                                                                        |
-| ------------------------ | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| PUBLIC_FOLDER            | `/public`               | The public folder to show [static files](https://expressjs.com/en/starter/static-files.html)                                       |
-| MANIFEST_HANDLERS_FOLDER | `/manifest/handlers`    | The folder to put your handlers functions for [custom endpoints](./endpoints.md)                                                   |
-| MANIFEST_FILE_PATH       | `/manifest/backend.yml` | The relative or absolute path of your Manifest YAML file                                                                           |
-| TOKEN_SECRET_KEY         | `-`                     | The secret key behind the JWT authentication. Required on production, you can [generate one here](https://jwtsecret.com/generate). |
+| Variable                 | Default                 | Description                                                                                                                 |
+| ------------------------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| PUBLIC_FOLDER            | `/public`               | The public folder to show [static files](https://expressjs.com/en/starter/static-files.html)                                |
+| MANIFEST_HANDLERS_FOLDER | `/manifest/handlers`    | The folder to put your handlers functions for [custom endpoints](./endpoints.md)                                            |
+| MANIFEST_FILE_PATH       | `/manifest/backend.yml` | The relative or absolute path of your Manifest YAML file                                                                    |
+| TOKEN_SECRET_KEY         | `-`                     | The secret key behind the JWT authentication. Required on production, you can [generate one here](https://jwtsecrets.com/). |
 
 ## Database
 

@@ -15,7 +15,7 @@ Manifest uses **JSON Web Tokens (JWT)** to do that. When you log in, you basical
 
 :::info
 
-Notice the `TOKEN_SECRET_KEY` variable in your `.env` file ? This is the key that will encrypt your tokens, you can [generate one here](https://jwtsecret.com/generate).
+Notice the `TOKEN_SECRET_KEY` variable in your `.env` file ? This is the key that will encrypt your tokens, you can [generate one here](https://jwtsecrets.com/).
 
 :::
 
