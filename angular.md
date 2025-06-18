@@ -16,7 +16,7 @@ This quick start guide focuses exclusively on the **frontend**. To ensure the fu
 
 If you already have your Angular app up and running, skip this step.
 
-We will use the [Angular CLI](https://angular.io/cli) to create a new Angular project. You can replace `my-client` by the name of your front-end app.
+We will use the [Angular CLI](https://angular.dev/tools/cli) to create a new Angular project. You can replace `my-client` by the name of your front-end app.
 
 ```
 ng new my-client
@@ -46,7 +46,7 @@ import Manifest from '@mnfst/sdk'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  cats: { id: number, name: string }[] = []
+  cats: { id: string, name: string }[] = []
 
   async ngOnInit() {
     // Init SDK.

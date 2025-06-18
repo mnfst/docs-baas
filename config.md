@@ -28,12 +28,12 @@ General environment variables.
 
 Environment variables related to paths.
 
-| Variable                 | Default                 | Description                                                                                                                        |
-| ------------------------ | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| PUBLIC_FOLDER            | `/public`               | The public folder to show [static files](https://expressjs.com/en/starter/static-files.html)                                       |
-| MANIFEST_HANDLERS_FOLDER | `/manifest/handlers`    | The folder to put your handlers functions for [custom endpoints](./endpoints.md)                                                   |
-| MANIFEST_FILE_PATH       | `/manifest/backend.yml` | The relative or absolute path of your Manifest YAML file                                                                           |
-| TOKEN_SECRET_KEY         | `-`                     | The secret key behind the JWT authentication. Required on production, you can [generate one here](https://jwtsecret.com/generate). |
+| Variable                 | Default                 | Description                                                                                                                 |
+| ------------------------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| PUBLIC_FOLDER            | `/public`               | The public folder to show [static files](https://expressjs.com/en/starter/static-files.html)                                |
+| MANIFEST_HANDLERS_FOLDER | `/manifest/handlers`    | The folder to put your handlers functions for [custom endpoints](./endpoints.md)                                            |
+| MANIFEST_FILE_PATH       | `/manifest/backend.yml` | The relative or absolute path of your Manifest YAML file                                                                    |
+| TOKEN_SECRET_KEY         | `-`                     | The secret key behind the JWT authentication. Required on production, you can [generate one here](https://jwtsecrets.com/). |
 
 ## Database
 
@@ -97,3 +97,15 @@ Here are examples of `.env` files for different database connections:
 
   </TabItem>
 </Tabs>
+
+## Integrating Manifest
+
+**Manifest has been designed to be easily integrated**, providing a simple yet complete backend to any tool. See how it runs on [Stackblitz](https://manifest.new) for example.
+
+The backend fits in an [NPM Package](https://www.npmjs.com/package/manifest) that you can add to your dependencies simply by running `npm install manifest`. By default, Manifest uses [SQLite](https://www.sqlite.org/), the n°1 file-based database. This means it’s portable and doesn’t require any kind of server to run.
+
+If you plan to run Manifest on a **mounted drive** like most cloud editors do, add the `--mountedDrive` argument to the run command to prevent [watcher errors](https://github.com/remy/nodemon?tab=readme-ov-file#application-isnt-restarting):
+
+```
+npm run manifest -- --mountedDrive
+```

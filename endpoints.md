@@ -54,7 +54,7 @@ Each endpoint can be defined in the YAML file with the following values:
 | **path\***      | -       | string       | The path of your endpoint. Use the `:var` syntax for route params. Ex: `users/:id/upvote` |
 | **method\***    | -       | _HttpMethod_ | The HTTP request method: "GET", "POST", "PATCH", "PUT" or "DELETE"                        |
 | **handler\***   | -       | string       | The name of the handler function triggered                                                |
-| **policies\***  | `[]`    | _Policy[]_   | The [access policies](./auth.md#access-policies) that restrict the access of the endpoint |
+| **policies\***  | `[]`    | _Policy[]_   | The [access policies](./access-policies.md) that restrict the access of the endpoint      |
 | **description** | -       | string       | Optional description for your endpoint                                                    |
 
 ## Manipulate data with the backend SDK

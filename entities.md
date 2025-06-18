@@ -32,9 +32,11 @@ entities:
       - name
 ```
 
-This file will generate the **Cat** and **Dog** entity both with a `name` property. You can now add your own pets through the admin panel!
+This file will generate the **Cat** and **Dog** entity both with a `name` property. In Manifest by default all entities have an **id** (UUID format) so you do not need to add it. They also have automatic **createdAt** and **updatedAt** columns that are not selected by default in the API requests.
 
-You can generate dummy data for all your entities with the simple command:
+You can now add your own pets through the admin panel!
+
+To generate dummy data for all your entities, run the simple command:
 
 ```
 npm run manifest:seed
@@ -67,7 +69,7 @@ entities:
 | **mainProp**      | _first string field_       | string   | Identifier prop. Used widely on the admin panel                                                          |
 | **nameSingular**  | _singular lower case name_ | string   | The singular lowercase name of your entity. Used widely on the admin panel.                              |
 | **namePlural**    | _plural lower case name_   | string   | The plural lowercase name of your entity. Used widely on the admin panel Default: plural lowercase name. |
-| **policies**      | -                          | Policies | The [access control policies](./auth.md#access-policies) of your entity                                  |
+| **policies**      | -                          | Policies | The [access control policies](./access-policies.md) of your entity                                       |
 | **properties**    | `[]`                       | Array    | The [properties](./entities.md#properties) of your entity                                                |
 | **seedCount**     | `50`                       | number   | the number of entities to seed when running the seed command.                                            |
 | **slug**          | _plural dasherized name_   | string   | The kebab-case slug of the entity that will define API endpoints.                                        |
