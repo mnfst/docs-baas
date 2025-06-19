@@ -45,8 +45,11 @@ You can replace `--cursor` with another option if you're using a different AI to
 - `--windsurf` for **Windsurf**
 - or remove it entirely if you're not using any AI coding tool
 
-> Note
-> You can also use `npm create` instead of `yarn create`.
+:::note
+
+You can also use `npm create` instead of `yarn create`.
+
+:::
 
 To start the Manifest backend, run the following command in the new project folder:
 
