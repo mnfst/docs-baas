@@ -67,7 +67,7 @@ By default, all rules have the [admin access type](#access-types)
 
 ## Ownership-based access
 
-Above rules are based on predefined roles, but you many want to grant user access only to their own records. For example, a platform like _Craiglist_ allows its users to create and manage classified ads only for them, not letting users edit others' content.
+Above rules are based on predefined roles, but you many want to grant user access only to their own records. For example, a platform like _Craigslist_ allows its users to create and manage classified ads only for them, not letting users edit others' content.
 
 In Manifest, this is done simply by adding the `{condition: 'self'}` to a restricted policy:
 
@@ -87,9 +87,9 @@ Project:
       - { access: restricted, allow: User, condition: self }
 ```
 
-See ? Just adding the `self` condition prevent creating projects for other users than themselves.
+See? Just adding the `self` condition prevent creating projects for other users than themselves.
 
-Even if it looks very simple, it has slighlty different impact based on rule where it is added. See the following example:
+Even if it looks very simple, it has slightly different impact based on rule where it is added. See the following example:
 
 ```yaml
 policies:
