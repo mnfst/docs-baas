@@ -55,7 +55,7 @@ To start the Manifest backend, run the following command in the new project fold
 
 ```
 cd my-project
-npm run manifest
+npm run start
 ```
 
 You can now:

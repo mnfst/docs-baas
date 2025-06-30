@@ -107,5 +107,5 @@ The backend fits in an [NPM Package](https://www.npmjs.com/package/manifest) tha
 If you plan to run Manifest on a **mounted drive** like most cloud editors do, add the `--mountedDrive` argument to the run command to prevent [watcher errors](https://github.com/remy/nodemon?tab=readme-ov-file#application-isnt-restarting):
 
 ```
-npm run manifest -- --mountedDrive
+npm run start -- --mountedDrive
 ```

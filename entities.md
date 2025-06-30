@@ -39,7 +39,7 @@ You can now add your own pets through the admin panel!
 To generate dummy data for all your entities, run the simple command:
 
 ```
-npm run manifest:seed
+npm run seed
 ```
 
 :::warning
@@ -95,7 +95,7 @@ ContactPage:
 You can generate dummy data for all your entities with the simple command:
 
 ```
-npm run manifest:seed
+npm run seed
 ```
 
 ### Entity params
