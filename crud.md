@@ -21,7 +21,9 @@ By default CRUD endpoints are private, only accessible for logged-in **admin** u
 
 ## Using the REST API
 
-Manifest exposes a REST API for CRUD operations. The **OpenAPI** documentation is automatically generated on http://localhost:1111/api. Have a look!
+Manifest exposes a REST API for CRUD operations. The **OpenAPI** documentation is automatically generated and the UI is available at http://localhost:1111/api. Have a look!
+
+An`openapi.yml` file is also generated along a `types.ts` file in the `./manifest` folder. Those 2 files are an amazing source of context for your **LLM**. If you want to connect a frontend to your Manifest backend, make sure that your **AI coding tool** sees those files to simplify your development.
 
 For CRUD endpoints, this prefix is followed by `collections` for [collections entities](#collections) and `singles` for [single entities](#singles) and by the slug of your entity (you can change it in the [entity params](entities.md#entity-params))
 

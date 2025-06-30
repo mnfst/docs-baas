@@ -20,7 +20,7 @@ Here are some examples of middleware use cases:
 
 ## Syntax
 
-```yaml title="manifest/backend.yml"
+```yaml title="manifest.yml"
 entities:
   Project 🗂️:
     properties:
@@ -33,9 +33,9 @@ entities:
         - handler: sendEmail
 ```
 
-This example triggers the handler located at `/manifest/handlers/setDate.js` before the item is created and stored in the database, and triggers `/manifest/handlers/sendEmail.js` after.
+This example triggers the handler located at `/handlers/setDate.js` before the item is created and stored in the database, and triggers `/handlers/sendEmail.js` after.
 
-```js title="manifest/handlers/setDate.js"
+```js title="/handlers/setDate.js"
 module.exports = async (req, res) => {
   console.log('Hello from the handler!')
 
@@ -52,7 +52,7 @@ You can add **several middlewares** for an event. They will be processed sequent
 
 Manifest passes the [JS SDK](./crud.md#using-the-javascript-sdk) to handler functions as third argument. You can use it to fetch or write data.
 
-```js title="manifest/handlers/patchDocumentNameIfEmpty.js"
+```js title="/handlers/patchDocumentNameIfEmpty.js"
 module.exports = async (req, res, manifest) => {
   // If the 'name' property of the item is empty.
   if (!req.body['name']) {

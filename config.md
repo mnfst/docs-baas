@@ -28,12 +28,12 @@ General environment variables.
 
 Environment variables related to paths.
 
-| Variable                 | Default                 | Description                                                                                                                 |
-| ------------------------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| PUBLIC_FOLDER            | `/public`               | The public folder to show [static files](https://expressjs.com/en/starter/static-files.html)                                |
-| MANIFEST_HANDLERS_FOLDER | `/manifest/handlers`    | The folder to put your handlers functions for [custom endpoints](./endpoints.md)                                            |
-| MANIFEST_FILE_PATH       | `/manifest/backend.yml` | The relative or absolute path of your Manifest YAML file                                                                    |
-| TOKEN_SECRET_KEY         | `-`                     | The secret key behind the JWT authentication. Required on production, you can [generate one here](https://jwtsecrets.com/). |
+| Variable                 | Default         | Description                                                                                                                 |
+| ------------------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| PUBLIC_FOLDER            | `/public`       | The public folder to show [static files](https://expressjs.com/en/starter/static-files.html)                                |
+| MANIFEST_HANDLERS_FOLDER | `/handlers`     | The folder to put your handlers functions for [custom endpoints](./endpoints.md)                                            |
+| MANIFEST_FILE_PATH       | `/manifest.yml` | The relative or absolute path of your Manifest YAML file                                                                    |
+| TOKEN_SECRET_KEY         | `-`             | The secret key behind the JWT authentication. Required on production, you can [generate one here](https://jwtsecrets.com/). |
 
 ## Database
 
@@ -44,7 +44,7 @@ We recommend switching to [PostgreSQL](https://www.postgresql.org/) or [MySQL](h
 | Variable      | Default                | Description                                                               | Applies To         |
 | ------------- | ---------------------- | ------------------------------------------------------------------------- | ------------------ |
 | DB_CONNECTION | `sqlite`               | Choose `postgres` switching to PostgreSQL or `mysql` for MySQL or MariaDB | All                |
-| DB_PATH       | `/manifest/backend.db` | Path of the database. Your server should have access to this path locally | SQLite             |
+| DB_PATH       | `/.manifest/db.sqlite` | Path of the database. Your server should have access to this path locally | SQLite             |
 | DB_HOST       | `localhost`            | Database host                                                             | PostgreSQL / MySQL |
 | DB_PORT       | `5432`                 | Database port                                                             | PostgreSQL / MySQL |
 | DB_USERNAME   | `postgres`             | Database username                                                         | PostgreSQL / MySQL |
@@ -62,7 +62,7 @@ Here are examples of `.env` files for different database connections:
 
     DB_CONNECTION=sqlite
 
-    DB_PATH=/manifest/backend.db
+    DB_PATH=/.manifest/db.sqlite
 
     ```
 
