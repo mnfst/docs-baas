@@ -12,7 +12,7 @@ You can use the built-in **custom validators** to ensure that the data you are r
 
 ## Syntax
 
-In your **backend.yml**, you can add a _validation_ object that lists the properties and their validators:
+In your **manifest.yml**, you can add a _validation_ object that lists the properties and their validators:
 
 ```yaml
 entities:

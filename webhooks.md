@@ -12,7 +12,7 @@ Webhooks are useful to connect other applications or to trigger a micro-service 
 
 ## Syntax
 
-```yaml title="manifest/backend.yml"
+```yaml title="manifest.yml"
 entities:
   # You can attach one or several webhooks to each entity event.
   Cat 😺:

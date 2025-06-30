@@ -21,7 +21,7 @@ Custom endpoints in Manifest follow a simple structure where you define:
 
 This is an example of a simple endpoint that returns a "Hello world from my new endpoint !" message when requesting `GET /endpoints/hello-world`.
 
-```yaml title="manifest/backend.yml"
+```yaml title="manifest.yml"
 endpoints:
   helloWorld:
     path: /hello-world
@@ -29,7 +29,7 @@ endpoints:
     handler: helloWorld
 ```
 
-```js title="manifest/handlers/helloWorld.js"
+```js title="handlers/helloWorld.js"
 module.exports = async (req, res) => {
   res.json({ message: 'Hello world from my new endpoint!' })
 }
@@ -37,7 +37,7 @@ module.exports = async (req, res) => {
 
 Manifest handlers are basically [ExpressJS middlewares](https://expressjs.com/en/guide/using-middleware.html) exposed with the [Manifest SDK](./crud.md#using-the-javascript-sdk) to help you work with your data.
 
-Place the handler file in the `/manifest/handlers` folder. For example, if the handler is `helloWorld`, the file should be `helloWorld.js`.
+Place the handler file in the `/handlers` folder. For example, if the handler is `helloWorld`, the file should be `helloWorld.js`.
 
 :::tip
 
@@ -61,9 +61,9 @@ Each endpoint can be defined in the YAML file with the following values:
 
 The next thing you may want to do is to **read and write data from your app**. This can be done using the Manifest backend SDK that shares the same CRUD and upload functions as the [JS SDK](http://localhost:3000/docs/javascript-sdk) for the front-end.
 
-Take the following example of a `backend.yml` file of a **leaderboard**:
+Take the following example of a `manifest.yml` file of a **leaderboard**:
 
-```yaml title="manifest/backend.yml"
+```yaml title="manifest.yml"
 name: Leaderboard app 🏅
 
 entities:
@@ -80,9 +80,9 @@ endpoints:
     handler: increaseScore
 ```
 
-We can now add the handler in the `/manifest/handlers` folder:
+We can now add the handler in the `/handlers` folder:
 
-```js title="manifest/handlers/increaseScore.js"
+```js title="/handlers/increaseScore.js"
 module.exports = async (req, res, manifest) => {
   // Get the requested competitor with the Manifest backend SDK.
   const competitor = await manifest

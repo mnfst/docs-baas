@@ -12,7 +12,7 @@ import TabItem from '@theme/TabItem';
 
 An entity is a model of objects linked to real-world concepts. Creating an entity in manifest generates **CRUD endpoints** that can be used by the [REST API](./crud.md#using-the-rest-api) or the [SDK](./crud.md#using-the-javascript-sdk).
 
-All entities are located in the `backend.yml` file under the **entities** property.
+All entities are located in the `manifest.yml` file under the **entities** property.
 
 There are 2 types of entities in Manifest: [Collections](#collections) and [Singles](#singles). **Collections** are multiple instances of similar data, stored as a list. E.g., users, customers, videos, etc. Singles are unique, standalone data that are singular in nature. E.g., home content, about content, settings, logo...
 
@@ -20,7 +20,7 @@ There are 2 types of entities in Manifest: [Collections](#collections) and [Sing
 
 Let's see a simple example:
 
-```yaml title="manifest/backend.yml"
+```yaml title="manifest.yml"
 name: A pet app
 
 entities:
@@ -133,9 +133,9 @@ Properties are the characteristics of your [entities](./entities.md). For exampl
 
 ### Syntax
 
-You can add the properties to your entities in the **backend.yml file**
+You can add the properties to your entities in the **manifest.yml file**
 
-```yaml title="manifest/backend.yml"
+```yaml title="manifest.yml"
 name: Blog about cats
 entities:
   Post 📝:
@@ -246,8 +246,8 @@ Timestamp field (ISO 8601 Format)
 ```
 
 #### Email
-You can create one-to-many relationships or many-to-many relationships. Defining relationships in your entities allows you to load relations when you query them and also filter by relations.
 
+You can create one-to-many relationships or many-to-many relationships. Defining relationships in your entities allows you to load relations when you query them and also filter by relations.
 
 ```yaml
 - { name: email, type: email }
@@ -349,7 +349,7 @@ You can create **one-to-many** relationships or **many-to-many** relationships. 
 
 The following example showcases the possibilities of **Manifest relations**:
 
-```yaml title="manifest/backend.yml"
+```yaml title="manifest.yml"
 name: Basketball League 🏀
 
 entities:
