@@ -65,7 +65,7 @@ See more [environment variables](./config.md#general-variables) you may need.
 
 ### Start script for production
 
-The `npm run manifest` script should only be used for **development** as it watches file changes.
+The `npm run start` script should only be used for **development** as it watches file changes.
 
 Go back to your codebase and open the `package.json` file and add a new **start** script on the scripts list with the value `node node_modules/manifest/dist/manifest/src/main.js` as following:
 
