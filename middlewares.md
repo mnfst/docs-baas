@@ -1,6 +1,7 @@
 ---
 id: middlewares
 title: Middlewares
+description: Add middlewares to trigger custom logic at defined lifecycle events of your Manifest backend. 6 available events related to entities.
 ---
 
 ## Introduction

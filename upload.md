@@ -1,5 +1,7 @@
 ---
 id: upload
+title: File and Image Uploads
+description: Upload files and images with Manifest built-in storage system to upload assets in the file storage or any S3-compatible storage. Define image sizes and quality for automatic resizing.
 ---
 
 import Tabs from '@theme/Tabs';

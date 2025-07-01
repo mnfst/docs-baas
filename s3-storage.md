@@ -1,3 +1,9 @@
+---
+id: s3-storage
+title: S3 Storage
+description: Use any S3-compatible storage to store your user assets in your Manifest backend. Images, videos, documents...
+---
+
 # S3 Storage
 
 ## Introduction

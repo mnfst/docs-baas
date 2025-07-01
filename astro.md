@@ -1,5 +1,7 @@
 ---
 id: astro
+title: Create a Full-Stack app with Astro and Manifest
+description: Quick start guide to create a full-stack app using Astro as a frontend and Manifest as a backend.
 ---
 
 # Quick start with Astro

@@ -1,5 +1,7 @@
 ---
 id: svelte
+title: Create a Full-Stack app with Svelte and Manifest
+description: Quick start guide to create a full-stack app using Svelte as a frontend and Manifest as a backend.
 ---
 
 # Quick start with Svelte

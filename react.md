@@ -1,5 +1,7 @@
 ---
 id: react
+title: Create a Full-Stack app with React and Manifest
+description: Quick start guide to create a full-stack app using React as a frontend and Manifest as a backend.
 ---
 
 # Quick start with React

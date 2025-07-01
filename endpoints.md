@@ -1,6 +1,7 @@
 ---
 id: endpoints
-title: Endpoints
+title: Custom Endpoints
+description: Add your own endpoints for your custom logic with Manifest. Each endpoint triggers a handler file that has access to Manifest logic and data.
 ---
 
 # Endpoints

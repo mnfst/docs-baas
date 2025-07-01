@@ -1,5 +1,7 @@
 ---
 id: validation
+title: Validation
+description: Server-side validation for your user-generated content. Use many validators like "required", "minLength", "contains" or "matches" for every property.
 ---
 
 # Validation

@@ -1,5 +1,7 @@
 ---
 id: config
+title: Manifest Configuration
+description: Configure Manifest Database (PostgreSQL, MySQL or SQLite), Port, OpenAPI and environments with a simple config.
 ---
 
 import Tabs from '@theme/Tabs';

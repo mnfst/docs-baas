@@ -1,5 +1,7 @@
 ---
 id: deploy
+title: Deploy to Production
+description: Deploy your Manifest backend to production in no time. Server, Databases and Storage options. Deploy on popular cloud providers and use Docker image.
 ---
 
 # Deploy Manifest

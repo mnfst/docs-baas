@@ -1,6 +1,7 @@
 ---
 id: entities
 title: Entities
+descriptions: Entities are the foundation of Manifest. Define your data structure in few lines and use 15+ real-world types for your properties.
 ---
 
 import Tabs from '@theme/Tabs';

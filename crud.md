@@ -1,5 +1,7 @@
 ---
 id: crud
+title: CRUD Operations
+description: Documentation for out-of-the-box CRUD endpoints with Manifest. Paginated lists, detail views, creating and updating single or collection entities.
 ---
 
 import Tabs from '@theme/Tabs';

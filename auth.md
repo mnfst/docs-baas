@@ -1,5 +1,7 @@
 ---
 id: authentication
+title: Authentication
+description: Implement Authentication quickly with Manifest built-in Auth component. Manage log in, sign up and admin roles.
 ---
 
 import Tabs from '@theme/Tabs';
