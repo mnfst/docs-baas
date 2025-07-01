@@ -12,7 +12,7 @@ This quick start guide focuses exclusively on the **frontend**. To ensure the fu
 
 :::
 
-# 1. Create a React app
+## 1. Create a React app
 
 If you already have a React app, you can skip this step.
 
@@ -24,7 +24,7 @@ cd my-client
 npm start
 ```
 
-# 2. Install Manifest SDK
+## 2. Install Manifest SDK
 
 Install the JS SDK from the root of your React app.
 
@@ -32,7 +32,7 @@ Install the JS SDK from the root of your React app.
 npm i @mnfst/sdk
 ```
 
-# 3. Use it in your app
+## 3. Use it in your app
 
 In that example we are using a Cat entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
 

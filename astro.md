@@ -12,7 +12,7 @@ This quick start guide focuses exclusively on the **frontend**. To ensure the fu
 
 :::
 
-# 1. Create a Astro app
+## 1. Create a Astro app
 
 If you already have your Astro app up and running, skip this step. Replace `my-astro-app` by the name of the Astro app created.
 
@@ -22,7 +22,7 @@ cd my-astro-app
 npm run dev
 ```
 
-# 2. Install Manifest SDK
+## 2. Install Manifest SDK
 
 Install the JS SDK from the root of your Astro app.
 
@@ -30,7 +30,7 @@ Install the JS SDK from the root of your Astro app.
 npm i @mnfst/sdk
 ```
 
-# 3. Use it in your app
+## 3. Use it in your app
 
 In that example we are using a Cat entity [created previously](entities.md). Replace it by your own entity.
 

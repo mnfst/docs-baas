@@ -12,7 +12,7 @@ This quick start guide focuses exclusively on the **frontend**. To ensure the fu
 
 :::
 
-# 1. Create a Vue app
+## 1. Create a Vue app
 
 If you already have a Vue app running, you can skip this step.
 
@@ -25,7 +25,7 @@ npm install
 npm run dev
 ```
 
-# 2. Install Manifest SDK
+## 2. Install Manifest SDK
 
 Install the JS SDK from the root of your Vue app.
 
@@ -33,7 +33,7 @@ Install the JS SDK from the root of your Vue app.
 npm i @mnfst/sdk
 ```
 
-# 3. Use it in your app
+## 3. Use it in your app
 
 In that example we are using a Cat entity [created previously](entities.md). Replace it by your own entity. This example uses TypeScript, you can remove the typing to have plain JS.
 
