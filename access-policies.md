@@ -1,7 +1,7 @@
 ---
 id: access
 title: Access Policies & Authorization
-description: Learn how to implement Role-Based Access Control (RBAC) and ownership-based access policies in Manifest. Control user permissions for CRUD operations with public, restricted, admin, and forbidden access types.
+description: Learn how to implement API policies to restrict resource access for CRUD operations and endpoints.
 ---
 
 # Access policies
