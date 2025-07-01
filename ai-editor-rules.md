@@ -2,7 +2,7 @@
 
 This guide explains how to obtain and install the Manifest rules file for your AI code editor.
 
-## Rules Integration
+## Built-In Rules Installation
 
 Manifest already provides one rule file per supported editor. It’s installed automatically during the Manifest CLI setup when you specify your editor:
 
@@ -15,12 +15,12 @@ Check the [Get Started](/docs/#install-manifest) guide for full documentation on
 
 <p>
 
-## Rules for AI code editors
+## Manual Rules Installation
 
 If you need to install rules yourself, download the file for your editor and add it to your AI code editor:
 
 <a href="https://raw.githubusercontent.com/mnfst/rules/refs/heads/main/src/rules.md" download>
-  Download Manifest rules
+  ⬇️ Download Manifest Rules
 </a></p>
 
 ## Generated API & Type Definitions
