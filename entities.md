@@ -163,6 +163,7 @@ You can pass arguments using the long syntax:
 | **hidden**     | `false`  | boolean    | If the property should be hidden in the API response                                                      |
 | **options**    | -        | Object     | Specific options depending on [property type](#property-types)                                            |
 | **validation** | -        | Object     | The [property validators](./validation.md) that each request compares against                             |
+| **helpText**   | -        | string     | Optional help text to display in admin UI                                                                 |
 | **default**    | -        | any        | The default value. When creating an item, if the property is not specified it will default to this value. |
 
 ### Property types
@@ -396,8 +397,9 @@ When you define a **belongsTo** relationship, it implicitly set the opposite _ha
 
 You can pass arguments using the long syntax:
 
-| Option     | Default     | Type    | Description                                                                                                                      |
-| ---------- | ----------- | ------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| **name**   | Entity name | string  | The name of the relation                                                                                                         |
-| **entity** | -           | string  | The class name of the entity that the relationship is with                                                                       |
-| **eager**  | `false`     | boolean | Whether the relationship should be eager loaded. Otherwise, you need to explicitly request the relation in the client SDK or API |
+| Option       | Default     | Type    | Description                                                                                                                      |
+| ------------ | ----------- | ------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| **name**     | Entity name | string  | The name of the relation                                                                                                         |
+| **entity**   | -           | string  | The class name of the entity that the relationship is with                                                                       |
+| **helpText** | -           | string  | Optional help text to display in admin UI                                                                                        |
+| **eager**    | `false`     | boolean | Whether the relationship should be eager loaded. Otherwise, you need to explicitly request the relation in the client SDK or API |
