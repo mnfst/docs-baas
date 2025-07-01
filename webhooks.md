@@ -1,5 +1,7 @@
 ---
 id: webhooks
+title: Webhooks
+description: Send requests to third-party applications using Manifest webhooks. Choose URL, method and send custom headers.
 ---
 
 # Webhooks
