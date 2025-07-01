@@ -25,7 +25,7 @@ If you need to install rules yourself, download the file for your editor and add
 
 ## Generated API & Type Definitions
 
-When you run Manifest (e.g., via npm run start or the CLI), it generates key context files:
+When you run Manifest, it generates key context files:
 
 - OpenAPI Specification (`./manifest/openapi.yml`): Contains all available endpoints, parameters, schemas, and the API base URL.
 - TypeScript Definitions (`./manifest/types.ts`): Provides typed interfaces for your API, which you can copy into your client folder for accurate code completion and type safety.
