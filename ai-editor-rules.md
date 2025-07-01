@@ -1,8 +1,8 @@
 # AI Editor Rules
 
-This guide explains how to obtain and install the Manifest rule files for your AI code editor.
+This guide explains how to obtain and install the Manifest rules file for your AI code editor.
 
-## Rule Integration
+## Rules Integration
 
 Manifest already provides one rule file per supported editor. It’s installed automatically during the Manifest CLI setup when you specify your editor:
 
