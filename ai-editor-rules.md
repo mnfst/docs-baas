@@ -1,40 +1,38 @@
-# AI Editor Rules
+# Manifest AI rules
 
-This guide explains how to obtain and install the Manifest rules file for your AI code editor.
+Rules are predefined guidelines and constraints that steer an AI assistant’s behavior.
 
-## Built-In Rules Installation
+They specify the style, conventions, best practices, or security policies to follow.
 
-Manifest already provides one rule file per supported editor. It’s installed automatically during the Manifest CLI setup when you specify your editor:
+Rules ensure consistency, quality, and compliance of the generated suggestions.
+
+## Usage
+
+Running the install command above will add the rules to the Manifest rules in your project.
 
 ```bash
 # Example: install for Cursor AI Code Editor
-yarn create manifest server --cursor
+npm create manifest --cursor
 ```
 
-Check the [Get Started](/docs/#install-manifest) guide for full documentation on built‑in integration.
+You can replace `--cursor` with another option if you're using a different AI tool;
 
-<p>
+- `--copilot` if you're using GitHub Copilot
+- `--windsurf` for Windsurf
 
-## Manual Rules Installation
-
-If you need to install rules yourself, download the file for your editor and add it to your AI code editor:
+If you need to install rules manually, download the file below and add it to your AI code editor:
 
 <a href="https://raw.githubusercontent.com/mnfst/rules/refs/heads/main/src/rules.md" download>
   ⬇️ Download Manifest Rules
 </a></p>
 
-## Generated API & Type Definitions
+## Types and OpenAPI Generation
 
 When you run Manifest, it generates key context files:
 
-- OpenAPI Specification (`./manifest/openapi.yml`): Contains all available endpoints, parameters, schemas, and the API base URL.
-- TypeScript Definitions (`./manifest/types.ts`): Provides typed interfaces for your API, which you can copy into your client folder for accurate code completion and type safety.
+- OpenAPI: A .yml file with the available endpoints, schemas, and the API base URL of your backend.
+- Types: A `.ts` file with types for each entity.
 
-The AI editor rules are designed to pick up these files automatically, guiding the AI agent to:
-
-1. Read the OpenAPI spec to understand your backend’s capabilities.
-2. Use the generated types to produce valid, type-safe client code.
+The AI editor rules are designed to pick up these files automatically.
 
 By including these context files, Manifest ensures your AI code editor has full visibility into your API, enabling smarter and more reliable code generation.
-
-This mechanism streamlines the creation of cohesive full-stack applications by ensuring your frontend and backend share a unified understanding of endpoints and types, reducing communication errors and speeding up development.
