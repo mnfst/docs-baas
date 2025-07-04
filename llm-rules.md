@@ -13,7 +13,6 @@ Rules are predefined guidelines and constraints that steer an AI assistant’s b
 Running the install command above will add the rules to the Manifest rules in your project.
 
 ```bash
-# Example: install for Cursor AI Code Editor
 npm create manifest --cursor
 ```
 
