@@ -35,6 +35,10 @@ Follow the steps below to install Manifest in your local machine.
 Run this command to create a Manifest project ready to use with Cursor IDE.
 
 ```bash
+# NPM
+npm create-manifest@latest my-project --cursor
+
+# Yarn
 yarn create manifest my-project --cursor
 ```
 
@@ -45,12 +49,6 @@ You can replace `--cursor` with another option if you're using a different AI to
 - `--copilot` if you're using **GitHub Copilot**
 - `--windsurf` for **Windsurf**
 - or remove it entirely if you're not using any AI coding tool
-
-:::note
-
-You can also use `npx create` instead of `yarn create`.
-
-:::
 
 To start the Manifest backend, run the following command in the new project folder:
 
