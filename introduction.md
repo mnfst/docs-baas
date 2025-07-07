@@ -48,7 +48,7 @@ You can replace `--cursor` with another option if you're using a different AI to
 
 :::note
 
-You can also use `npm create` instead of `yarn create`.
+You can also use `npx create` instead of `yarn create`.
 
 :::
 

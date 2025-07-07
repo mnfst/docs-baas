@@ -13,7 +13,7 @@ Rules are predefined guidelines and constraints that steer an AI assistant’s b
 Running the install command above will add the rules to the Manifest rules in your project.
 
 ```bash
-npm create manifest --cursor
+npx create manifest --cursor
 ```
 
 You can replace `--cursor` with another option if you're using a different AI tool;
