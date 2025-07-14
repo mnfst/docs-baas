@@ -35,8 +35,8 @@ Follow the steps below to install Manifest in your local machine.
 Run this command to create a Manifest project ready to use with Cursor IDE.
 
 ```bash
-# NPM
-npm create-manifest@latest my-project --cursor
+# NPX
+npx create-manifest@latest my-project --cursor
 
 # Yarn
 yarn create manifest my-project --cursor
