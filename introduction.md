@@ -1,6 +1,6 @@
 ---
 id: get-started
-title: Introduction
+title: Get Started
 slug: /
 description: Manifest is an Open Source backend that fits in a single YAML file. Easy to edit, validate and version for humans and LLMs.
 ---
