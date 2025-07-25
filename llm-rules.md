@@ -27,6 +27,10 @@ If you need to install rules manually, download the file below and add it to you
   ⬇️ Download Manifest Rules
 </a>
 
+## Integration with Lovable, Bolt.new and vibe coding tools
+
+Manifest already works with ❤️ [Lovable](https://lovable.dev) if you clone the project and run it locally. It also works great with [Bolt.new](https://bolt.new) and other vibe coding tools. With a native integration, you could launch Manifest directly **inside Lovable** without any setup. ⬆️ [Upvote this idea if you want that](https://lovable.featurebase.app/fr/p/manifestbuild-integration?slug=manifestbuild-integration).
+
 ## Types and OpenAPI Generation
 
 When you run Manifest, it generates 2 key context files in the **/.manifest** folder:
