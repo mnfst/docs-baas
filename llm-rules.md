@@ -31,9 +31,9 @@ If you need to install rules manually, download the file below and add it to you
 
 <div style={{ backgroundColor: '#d6ffee', padding: '1em 1em 0.1em 1em', borderRadius: '12px' }}>
 
-Manifest already works with ❤️ [Lovable](https://lovable.dev) if you clone the project and run it locally. It also works great with [Bolt.new](https://bolt.new) and other vibe coding tools. With a native integration, you could launch Manifest directly **inside Lovable** without any setup.
+Manifest already works with ❤️ [Lovable](https://lovable.dev) if you clone the project and run it locally. With a native integration, you could launch Manifest directly **inside Lovable** or bolt.new without any setup.
 
-⬆️ **[Upvote this idea if you want that](https://lovable.featurebase.app/fr/p/manifestbuild-integration?slug=manifestbuild-integration)**
+Want this to happen? ⬆️ **[Upvote the idea](https://lovable.featurebase.app/fr/p/manifestbuild-integration?slug=manifestbuild-integration)**.
 
 </div>
 
