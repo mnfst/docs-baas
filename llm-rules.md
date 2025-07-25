@@ -33,7 +33,7 @@ If you need to install rules manually, download the file below and add it to you
 
 Manifest already works with ❤️ [Lovable](https://lovable.dev) and [Bolt.new](https://bolt.new) if you clone the project and run it locally. With a native integration, you could launch Manifest directly inside them.
 
-Want to see Manifest inside Lovable ? ⬆️ **[Upvote the idea](https://lovable.featurebase.app/fr/p/manifestbuild-integration?slug=manifestbuild-integration)**.
+Want to see Manifest inside **Lovable** ? ⬆️ **[Upvote the idea](https://lovable.featurebase.app/fr/p/manifestbuild-integration?slug=manifestbuild-integration)**.
 
 </div>
 
