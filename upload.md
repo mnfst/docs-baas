@@ -87,7 +87,7 @@ A file should be related to a property with the [file property type](./entities.
 
 ## Upload an image
 
-An image should be related to a property with the [image property type](./entities.md#image). Manifest accepts **.PNG** and **.JPG** images only.
+An image should be related to a property with the [image property type](./entities.md#image). Manifest accepts the following image formats: **jpg**, **png**, **wepb**, **gif**, **avif**, **tiff** and **dzi**.
 
 Each image uploaded will be optimized and resized into several sizes based on [the property parameters](./entities.md#property-params). By default it generates a _thumbnail_ of 80x80 and a _medium_ of 160x160
 
