@@ -21,7 +21,7 @@ When checking for a new version available in the admin panel, we log the followi
 
 Information is not logged more than once every 24 hours.
 
-# Opting out
+## Opting out
 
 That tiny amount of data we collect helps us a lot to make Manifest a better product. Nevertheless you can opt-out anytime adding this to your `.env` file.
 
