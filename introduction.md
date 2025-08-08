@@ -9,18 +9,19 @@ description: Manifest is an Open Source backend that fits in a single YAML file.
 
 ## Introduction
 
-Manifest is a **backend** designed for developers using **AI coding tools** like [Cursor](https://www.cursor.com/), [Copilot](https://github.com/features/copilot) or [Windsurf](https://windsurf.com/).
+Manifest is a **1-file backend** for prototypes and MVPs.
 
-If you’ve been using AI tools to build your app or website, you already know the truth: Generating a frontend is easy, but building the backend is still a mess.
+Most backend tools feel too heavy for simple apps. They force you to use bloated configuration UIs. Even with AI tools that generate frontend code, the backend remains a pain to set up and validate. It slows you down when you just want to test an idea or build something simple..
+The solution
 
-With **Manifest**, you define your entire backend in a single YAML file. It can be generated and edited by both humans and LLMs.
+Manifest is an open source backend that fits in only 1 file. You define it in a simple yaml language to get data, auth, storage, logic and an admin panel.
 
-Key advantages:
+**Key advantages:**
 
-- 🤖 Fits naturally into AI-assisted coding
-- 🔒 Easy to edit, validate and version.
-- 🗄️ Data, logic, storage, essentials features and an admin panel
-- 🧠 Reduce LLM token usage by up to 90%
+- 🧠 Zero friction setup
+- 🚀 Ship your backend fast and stay focused on building your app. 
+- 🤖 Easy for LLMs to generate
+- 💻 Can run everywhere
 
 ## Install Manifest
 
