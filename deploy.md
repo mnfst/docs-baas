@@ -69,16 +69,16 @@ See more [environment variables](./config.md#general-variables) you may need.
 
 The `npm run start` script should only be used for **development** as it watches file changes.
 
-Go back to your codebase and open the `package.json` file and add a new **start** script on the scripts list with the value `node node_modules/manifest/dist/manifest/src/main.js` as following:
+Go back to your codebase and open the `package.json` file and add a new **start:prod** script on the scripts list with the value `node node_modules/manifest/dist/manifest/src/main.js` as following:
 
 ```json title="package.json"
 "scripts": {
-    "start": "node node_modules/manifest/dist/manifest/src/main.js"
+    "start:prod": "node node_modules/manifest/dist/manifest/src/main.js"
     [...]
 }
 ```
 
-After that you will be able to run Manifest for production with `npm run start`.
+After that you will be able to run Manifest for production with `npm run start:prod` without watching file changes.
 
 ## Docker
 
@@ -86,7 +86,7 @@ After that you will be able to run Manifest for production with `npm run start`.
 
 ```dockerfile title="Dockerfile"
 # Use the official Node.js image as a base
-FROM node:18-slim
+FROM node:22-slim
 
 # Copy package.json and package-lock.json (if available)
 COPY package*.json ./
@@ -104,7 +104,7 @@ ENV NODE_ENV=production
 EXPOSE 1111
 
 # Start the application
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "start:prod"]
 ```
 
 ## Guides for popular app platform services
