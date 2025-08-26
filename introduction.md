@@ -19,7 +19,7 @@ Manifest is an open source backend that fits in only 1 file. You define it in a 
 **Key advantages:**
 
 - 🧠 Zero friction setup
-- 🚀 Ship your backend fast and stay focused on building your app. 
+- 🚀 Ship your backend fast and stay focused on building your app
 - 🤖 Easy for LLMs to generate
 - 💻 Can run everywhere
 
@@ -64,7 +64,7 @@ You can now:
 
 :::tip
 
-If you already have a frontend app, you can run the `npx add-manifest` command from your **project root** to include it in your repo.
+If you already have a frontend app, we recommend that you use a **monorepo** structure with one folder for the backend and one folder for the frontend. For example you can run `npx create-manifest@latest server` at root level to add your Manifest to a `server` folder that you put next to the `client` folder that will contain your frontend.
 
 :::
 
