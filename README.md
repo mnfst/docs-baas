@@ -1,6 +1,6 @@
 # Manifest documentation
 
-Visit https://manifest.build/docs to see the online version
+Visit https://backend.manifest.build/docs to see the online version
 
 # Contribution Guidelines
 
