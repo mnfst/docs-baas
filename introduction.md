@@ -37,7 +37,7 @@ Run this command to create a Manifest project ready to use with Cursor IDE.
 
 ```bash
 # NPX
-npx create-manifest@latest my-project --cursor
+npx create-manifest@1 my-project --cursor
 
 # Yarn
 yarn create manifest my-project --cursor
@@ -64,7 +64,7 @@ You can now:
 
 :::tip
 
-If you already have a frontend app, we recommend that you use a **monorepo** structure with one folder for the backend and one folder for the frontend. For example you can run `npx create-manifest@latest server` at root level to add your Manifest to a `server` folder that you put next to the `client` folder that will contain your frontend.
+If you already have a frontend app, we recommend that you use a **monorepo** structure with one folder for the backend and one folder for the frontend. For example you can run `npx create-manifest@1 server` at root level to add your Manifest to a `server` folder that you put next to the `client` folder that will contain your frontend.
 
 :::
 

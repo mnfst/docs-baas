@@ -39,7 +39,7 @@ Environment variables related to paths.
 
 ## Database
 
-By default Manifest runs with [SQLite](https://www.sqlite.org/) to enable instant launch with the `npx create-manifest@latest` command.
+By default Manifest runs with [SQLite](https://www.sqlite.org/) to enable instant launch with the `npx create-manifest@1` command.
 
 We recommend switching to [PostgreSQL](https://www.postgresql.org/) or [MySQL](https://www.mysql.com/) or its alternative [MariaDB](https://mariadb.org/) on production for more robustness and to choose from a large number of managed database providers.
 
